@@ -1,20 +1,20 @@
 ChooseComponents {
     Title
-    "Pasirenkamasis ádiegimas"
+    "Pasirenkamasis Ğ±diegimas"
 
     Subtitle
-    "Pasirinkite komponentus kuriuos diegimo programa ádiegs."
+    "Pasirinkite komponentus kuriuos diegimo programa Ğ±diegs."
 
     Caption
-    "Paşymëkite komponentus kuriuos norite ádiegti ir atşymëkite\
-     tuos kuriuos nenorite ádiegti."
+    "PaÑymĞ»kite komponentus kuriuos norite Ğ±diegti ir atÑymĞ»kite\
+     tuos kuriuos nenorite Ğ±diegti."
 
 
     Message
-    "Reikës <%SpaceRequiredText%> talpos"
+    "ReikĞ»s <%SpaceRequiredText%> talpos"
 
     DescriptionLabel
-    "Aprağymas"
+    "ApraÑ€ymas"
 
     NextButton
     "<%Next%> >"
@@ -34,7 +34,7 @@ CopyFiles {
     "Diegiama <%AppName%>"
 
     Caption
-    "Prağom palaukti kol diegimo programa ádiegs <%AppName%> á jûsø kompiuterá."
+    "PraÑ€om palaukti kol diegimo programa Ğ±diegs <%AppName%> Ğ± jÑ‹sÑˆ kompiuterĞ±."
 
     Message
     ""
@@ -57,10 +57,10 @@ CopyFiles {
 
 CustomBlankPane1 {
     Caption
-    "Áveskite pavadinimà."
+    "Ğ‘veskite pavadinimĞ°."
 
     Message
-    "Áveskite praneğimà."
+    "Ğ‘veskite praneÑ€imĞ°."
 
     NextButton
     "<%Next%> >"
@@ -74,16 +74,16 @@ CustomBlankPane1 {
 
 CustomBlankPane2 {
     Title
-    "Antrağtë"
+    "AntraÑ€tĞ»"
 
     Subtitle
-    "Paantrağtë"
+    "PaantraÑ€tĞ»"
 
     Caption
     "Pavadinimas"
 
     Message
-    "Praneğimas"
+    "PraneÑ€imas"
 
     NextButton
     "<%Next%> >"
@@ -97,19 +97,19 @@ CustomBlankPane2 {
 
 CustomTextPane1 {
     Title
-    "Antrağtë"
+    "AntraÑ€tĞ»"
 
     Subtitle
-    "Paantrağtë"
+    "PaantraÑ€tĞ»"
 
     Caption
     "Pavadinimas"
 
     Message
-    "Praneğimas"
+    "PraneÑ€imas"
 
     Text
-    "Áveskite pasirinktà teskta."
+    "Ğ‘veskite pasirinktĞ° teskta."
 
     NextButton
     "<%Next%> >"
@@ -126,16 +126,16 @@ License {
     "Sutikimas su licencija"
 
     Subtitle
-    "rağom perskaityti ğá sutikimà su licencija."
+    "raÑ€om perskaityti Ñ€Ğ± sutikimĞ° su licencija."
 
     Text
-    "Patalpinkite èia savo licencijà."
+    "Patalpinkite Ğ¸ia savo licencijĞ°."
 
     AcceptRadiobutton
-    "Ağ sutinku su licencija."
+    "AÑ€ sutinku su licencija."
 
     DeclineRadiobutton
-    "Ağ nesutinku su licencija."
+    "AÑ€ nesutinku su licencija."
 
     NextButton
     "<%Next%> >"
@@ -175,22 +175,22 @@ Readme {
 
 SelectDestination {
     Title
-    "Pasirinkite paskirties vietà"
+    "Pasirinkite paskirties vietĞ°"
 
     Subtitle
-    "Kur turëtø bûti <%AppName%> ádiegta?"
+    "Kur turĞ»tÑˆ bÑ‹ti <%AppName%> Ğ±diegta?"
 
     Caption
-     "Diegimo programa ádiegs <%AppName%> á ğá katalogà.\n\nTam kad instaliuoti\
-     á ğá katalogà, paspauskite <%Next%>.\n\nÁdiegimui á kita katalogà,\
-     paspauskite <%Browse%> ir pasirinkite kità katalogà."
+     "Diegimo programa Ğ±diegs <%AppName%> Ğ± Ñ€Ğ± katalogĞ°.\n\nTam kad instaliuoti\
+     Ğ± Ñ€Ğ± katalogĞ°, paspauskite <%Next%>.\n\nĞ‘diegimui Ğ± kita katalogĞ°,\
+     paspauskite <%Browse%> ir pasirinkite kitĞ° katalogĞ°."
 
     Message
     ""
 
     BrowseText
-    "Tam kad instaliuoti á ğá katalogà, paspauskite <%Next%>. Ádiegimui á
-     kita katalogà, paspauskite <%Browse%> ir pasirinkite kità katalogà."
+    "Tam kad instaliuoti Ğ± Ñ€Ğ± katalogĞ°, paspauskite <%Next%>. Ğ‘diegimui Ğ±
+     kita katalogĞ°, paspauskite <%Browse%> ir pasirinkite kitĞ° katalogĞ°."
 
     NextButton
     "<%Next%> >"
@@ -210,15 +210,15 @@ SelectDestination {
 
 SelectProgramFolder {
     Title
-    "Pasirinkite programos katalogà"
+    "Pasirinkite programos katalogĞ°"
 
     Subtitle
-    "Prağom pasirinkite programos katalogà"
+    "PraÑ€om pasirinkite programos katalogĞ°"
 
     Caption
-    "Diegimo programa ákels programos ikonas á programø katalogà pavaizduotà\
-     apaèioje.  Galite ávesti naujà katalogo pavadinimà arba pasirinkti iğ\
-     esanèiø.  Norëdami tæsti <%Next%>."
+    "Diegimo programa Ğ±kels programos ikonas Ğ± programÑˆ katalogĞ° pavaizduotĞ°\
+     apaĞ¸ioje.  Galite Ğ±vesti naujĞ° katalogo pavadinimĞ° arba pasirinkti iÑ€\
+     esanĞ¸iÑˆ.  NorĞ»dami tĞ¶sti <%Next%>."
 
     Message
     ""
@@ -244,11 +244,11 @@ SelectProgramFolder {
 
 SetupComplete {
     Caption
-    "InstallJammer vedlys pabaigë darbà"
+    "InstallJammer vedlys pabaigĞ» darbĞ°"
 
     Message
-    "Diegimo programa baigë diegti <%AppName%> á jûsø kompiuterá.  Paspauskite\
-    <%Finish%>, kad uşbaigti diegimà."
+    "Diegimo programa baigĞ» diegti <%AppName%> Ğ± jÑ‹sÑˆ kompiuterĞ±.  Paspauskite\
+    <%Finish%>, kad uÑbaigti diegimĞ°."
 
     NextButton
     "<%Finish%>"
@@ -265,16 +265,16 @@ SetupType {
     "Diegimo tipas"
 
     Subtitle
-    "Pasirinkite diegimo tipà kurio pageidaujate."
+    "Pasirinkite diegimo tipĞ° kurio pageidaujate."
 
     Caption
-    "Pasirinkite diegimo tipà kurio pageidaujate."
+    "Pasirinkite diegimo tipĞ° kurio pageidaujate."
 
     Message
     ""
 
     DescriptionLabel
-    "Aprağymas"
+    "ApraÑ€ymas"
 
     NextButton
     "<%Next%> >"
@@ -288,15 +288,15 @@ SetupType {
 
 StartCopyingFiles {
     Title
-    "Pradedamas failø kopijavimas"
+    "Pradedamas failÑˆ kopijavimas"
 
     Subtitle
-    "Perşiûrëkite nustatymus prieğ pradedant kopijuoti failus"
+    "PerÑiÑ‹rĞ»kite nustatymus prieÑ€ pradedant kopijuoti failus"
 
     Caption
-    "Diegimo programa turi pakankamai informacijos, kad pradëti kopijuoti programos failus.\
-     Jei norite perşiûrëti arba pakeisti nustatymus, spauskite <%Back%>. Jei nustatymai\
-     tenkina, spauskite <%Next%>, kad pradëti kopijuoti failus."
+    "Diegimo programa turi pakankamai informacijos, kad pradĞ»ti kopijuoti programos failus.\
+     Jei norite perÑiÑ‹rĞ»ti arba pakeisti nustatymus, spauskite <%Back%>. Jei nustatymai\
+     tenkina, spauskite <%Next%>, kad pradĞ»ti kopijuoti failus."
 
     Message
     ""
@@ -323,7 +323,7 @@ Uninstall {
     "Uninstalling"
 
     Subtitle
-    "Pağalinama <%AppName%>"
+    "PaÑ€alinama <%AppName%>"
 
     Caption
     "<%GroupBeingUninstalledText%>"
@@ -349,10 +349,10 @@ Uninstall {
 
 UninstallComplete {
     Caption
-    "Programos pağalinimas baigtas"
+    "Programos paÑ€alinimas baigtas"
 
     Message
-    "<%AppName%> buvo pağalinta iğ jûsø sistemos."
+    "<%AppName%> buvo paÑ€alinta iÑ€ jÑ‹sÑˆ sistemos."
 
     NextButton
     "<%Finish%>"
@@ -366,13 +366,13 @@ UninstallComplete {
 
 UninstallDetails {
     Title
-    "Programos pağalinimas iğsamiau"
+    "Programos paÑ€alinimas iÑ€samiau"
 
     Subtitle
-    "Klaidos atsitikusios per programos pağalinimà"
+    "Klaidos atsitikusios per programos paÑ€alinimĞ°"
 
     Caption
-    "Klaidos atsitikusios per programos pağalinimà:"
+    "Klaidos atsitikusios per programos paÑ€alinimĞ°:"
 
     Message
     ""
@@ -396,10 +396,10 @@ UserInformation {
     "Vartotojo informacija"
 
     Subtitle
-    "Prağome ávesti savo informacijà."
+    "PraÑ€ome Ğ±vesti savo informacijĞ°."
 
     Caption
-    "Áveskite savo vardà ir organizacijà kurioje dirbate."
+    "Ğ‘veskite savo vardĞ° ir organizacijĞ° kurioje dirbate."
 
     Message
     ""
@@ -423,11 +423,11 @@ UserInformation {
 
 Welcome {
     Caption
-    "Sveiki atvyke á <%AppName%> diegimo programà."
+    "Sveiki atvyke Ğ± <%AppName%> diegimo programĞ°."
 
     Message
-    "Pabrëştinai patartina iğeiti iğ visø Windows programø kurias esate\
-     pasileidæ. Spauskite <%Next%> tam, kad tæsti diegimà."
+    "PabrĞ»Ñtinai patartina iÑ€eiti iÑ€ visÑˆ Windows programÑˆ kurias esate\
+     pasileidĞ¶. Spauskite <%Next%> tam, kad tĞ¶sti diegimĞ°."
 
     NextButton
     "<%Next%> >"
@@ -441,13 +441,13 @@ Welcome {
 
 InstallPassword {
     Title
-    "Diegimo slaptaşodis"
+    "Diegimo slaptaÑodis"
 
     Subtitle
-    "Ğiam diegimui reikia slaptaşodşio."
+    "Ğ iam diegimui reikia slaptaÑodÑio."
 
     Caption
-    "Prağom ávesti slaptaşodá."
+    "PraÑ€om Ğ±vesti slaptaÑodĞ±."
 
     Message
     ""

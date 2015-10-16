@@ -200,7 +200,7 @@ proc ::InstallJammer::PopulateProgramFolders { step } {
             set dir [::InstallJammer::WindowsDir $dir]
             eval lappend folders [glob -nocomplain -type d -dir $dir -tails *]
         }
-	eval [list $listbox insert end] [lsort -dict -unique $folders]
+        eval [list $listbox insert end] [lsort -dict -unique $folders]
     }
 }
 
@@ -302,10 +302,10 @@ proc ::InstallJammer::exit { {prompt 0} } {
 
     if {$info(Installing)} {
         ## If we're still installing, we need to stop the install.
-	::InstallJammer::StopInstall
+        ::InstallJammer::StopInstall
 
-	## Give unpack a chance to die before exiting ourselves.
-	vwait ::info(Installing)
+        ## Give unpack a chance to die before exiting ourselves.
+        vwait ::info(Installing)
 
         if {[string match "*Continue*" $info(CancelledInstallAction)]} {
             ## FIXME:  Need to finish Continue option for a cancelled install.
@@ -315,9 +315,9 @@ proc ::InstallJammer::exit { {prompt 0} } {
     if {$info(InstallStarted)
         && $info(InstallStopped)
         && $info(CleanupCancelledInstall)} {
-	## We only want to try to cleanup if we actually started the
-	## unpack process at some point in the install.  If not, we
-	## haven't really done any work to cleanup.
+        ## We only want to try to cleanup if we actually started the
+        ## unpack process at some point in the install.  If not, we
+        ## haven't really done any work to cleanup.
         ::InstallJammer::CleanupCancelledInstall
     }
 
@@ -364,7 +364,7 @@ proc ::InstallJammer::UnpackOutput { line } {
 
     switch -- $command {
         ":DONE" {
-	    ::InstallJammer::UnpackOutput [list :PERCENT 100]
+            ::InstallJammer::UnpackOutput [list :PERCENT 100]
 
             set info(FileBeingInstalled)  ""
             set info(GroupBeingInstalled) ""
@@ -379,8 +379,8 @@ proc ::InstallJammer::UnpackOutput { line } {
             ::InstallJammer::InstallLog [lindex $line 1]
         }
 
-	":GROUP" {
-	    set info(GroupBeingInstalled) [lindex $line 1]
+        ":GROUP" {
+            set info(GroupBeingInstalled) [lindex $line 1]
             ::InstallJammer::UpdateWidgets -buttons 0 -updateidletasks 1
 
             if {!$info(GuiMode) && !$info(SilentMode)} {
@@ -388,13 +388,13 @@ proc ::InstallJammer::UnpackOutput { line } {
                 ::InstallJammer::ConsoleClearLastLine $cols
                 echo <%Status%> 1
             }
-	}
+        }
 
-	":DIR" {
-	    set dir   [lindex $line 1]
-	    set perms [lindex $line 2]
-	    lappend conf(directoryPermissions) $dir $perms
-	}
+        ":DIR" {
+            set dir   [lindex $line 1]
+            set perms [lindex $line 2]
+            lappend conf(directoryPermissions) $dir $perms
+        }
 
         ":DISC" {
             set info(RequiredDiscName) [lindex $line 1]
@@ -403,10 +403,10 @@ proc ::InstallJammer::UnpackOutput { line } {
             ::InstallJammer::ContinueInstall
         }
 
-	":FILE" {
+        ":FILE" {
             set file [lindex $line 1]
             set ::conf(TMPFILE) $file
-	    set info(FileBeingInstalled) $file
+            set info(FileBeingInstalled) $file
             ::InstallJammer::SetVersionInfo $file [lindex $line 2]
             if {$conf(UpdateFileText)} {
                 ::InstallJammer::UpdateWidgets -buttons 0 -updateidletasks 1
@@ -415,36 +415,36 @@ proc ::InstallJammer::UnpackOutput { line } {
             if {$::verbose == 1} {
                 debug "Installing $file..."
             }
-	}
+        }
 
-	":PERCENT" {
-	    set percent [lindex $line 1]
+        ":PERCENT" {
+            set percent [lindex $line 1]
             set info(InstallPercentComplete) $percent
             if {$info(InstallPercentComplete) != $conf(LastPercent)} {
-		if {$info(GuiMode)} {
-		    ::InstallJammer::UpdateWidgets -buttons 0 -updateidletasks 1
-		} elseif {$info(ConsoleMode) && $conf(ShowConsoleProgress)} {
-		    ::InstallJammer::ConsoleProgressBar $percent
-		}
-		set conf(LastPercent) $percent
+                if {$info(GuiMode)} {
+                    ::InstallJammer::UpdateWidgets -buttons 0 -updateidletasks 1
+                } elseif {$info(ConsoleMode) && $conf(ShowConsoleProgress)} {
+                    ::InstallJammer::ConsoleProgressBar $percent
+                }
+                set conf(LastPercent) $percent
             }
-	}
+        }
 
         ":ROLLBACK" {
             lappend conf(rollbackFiles) [lindex $line 1]
         }
 
-	":FILEPERCENT" {
+        ":FILEPERCENT" {
             set info(FilePercentComplete) [lindex $line 1]
             if {$conf(UpdateFilePercent)} {
                 ::InstallJammer::UpdateWidgets -buttons 0 -updateidletasks 1
             }
-	}
+        }
 
-	default {
+        default {
             debug "Unpack Error: $line"
             append info(InstallErrors) $line\n
-	}
+        }
     }
 }
 
@@ -509,7 +509,13 @@ proc ::InstallJammer::BuildUnpack {} {
     global info
     global conf
 
-    if {[info exists conf(UnpackBin)]} { return $conf(UnpackBin) }
+    # NMB-18483        upgrade tool is not getting bundled on linux
+    # Installs on windows are threaded, on linux are evented.
+    # Only the evented code path sets conf(UnpackBin)
+    # not entirely sure why this line is here, think its a bug with install jammer.
+    # Normally, I do not check in commented out code. Doing it this time in case
+    # I have introduced an unforseen error.
+    #if {[info exists conf(UnpackBin)]} { return $conf(UnpackBin) }
 
     set unpack [TmpDir unpack.tcl]
     set conf(UnpackScript) $unpack
@@ -517,7 +523,7 @@ proc ::InstallJammer::BuildUnpack {} {
     set fp [open $unpack w]
     fconfigure $fp -translation lf
     foreach file {common.tcl files.tcl setup.tcl components.tcl unpack.tcl} {
-	puts $fp $::InstallJammer::files($file)
+        puts $fp $::InstallJammer::files($file)
     }
     close $fp
 
@@ -541,21 +547,21 @@ proc ::InstallJammer::CleanupCancelledInstall {} {
     set files   {}
     set regkeys {}
     foreach line [lreverse $conf(LOG)] {
-	set type [lindex $line 0]
-	set args [lrange $line 1 end]
-	switch -- $type {
-	    ":FILE"	{
+        set type [lindex $line 0]
+        set args [lrange $line 1 end]
+        switch -- $type {
+            ":FILE"        {
                 lappend files [lindex $args 0]
             }
 
-	    ":DIR"	{
+            ":DIR"        {
                 lappend dirs $args
             }
 
-	    ":REGISTRY"	{
+            ":REGISTRY"        {
                 lappend regkeys $args
             }
-	}
+        }
     }
 
     foreach file $files {
@@ -846,7 +852,7 @@ proc ::InstallJammer::StoreVersionInfo { {dir ""} {file ""} } {
     ::InstallJammer::LogFile $file
 
     foreach filename [array names versions] {
-	puts $fp "Ver [list $filename] $versions($filename)"
+        puts $fp "Ver [list $filename] $versions($filename)"
     }
 
     close $fp
@@ -1188,8 +1194,8 @@ proc ::InstallJammer::InitInstall {} {
 
     ## Setup the default user information under Windows
     if {$conf(windows)} {
-	set key {HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion}
-	catch {
+        set key {HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion}
+        catch {
             set info(UserInfoName)    [registry get $key RegisteredOwner]
             set info(UserInfoCompany) [registry get $key RegisteredOrganization]
         }
@@ -1208,7 +1214,7 @@ proc ::InstallJammer::InitInstall {} {
 
     ## Call a proc if the all users value changes.
     ::InstallAPI::SetVirtualText -virtualtext ProgramFolderAllUsers \
-    	-command ::InstallJammer::ModifyProgramFolder
+            -command ::InstallJammer::ModifyProgramFolder
 
     ::InstallAPI::SetVirtualText -virtualtext SelectedComponents \
         -command ::InstallJammer::ModifySelectedComponents

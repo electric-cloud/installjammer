@@ -64,6 +64,12 @@ proc ::InstallJammer::actions::ConsoleAskYesOrNo { obj } {
         if {$ans eq "yes" || $ans eq "no"} { break }
     }
 
+    if {[string equal -nocase $ans "no"]} {
+        set ans 0
+    } else {
+        set ans 1
+    }
+
     if {$props(VirtualText) ne ""} {
         set ::info($props(VirtualText)) $ans
     }

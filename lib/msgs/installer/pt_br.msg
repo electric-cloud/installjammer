@@ -17,7 +17,7 @@ Cancel
 "Cancelar"
 
 CleanupInstallText
-"Limpando instalaÁ„o..."
+"Limpando instala√ß√£o..."
 
 Close
 "Fechar"
@@ -26,16 +26,16 @@ CreateDesktopShortcutText
 "Criando atalho no Desktop"
 
 CreateQuickLaunchShortcutText
-"CriaÁ„o de atalho na barra de inicializaÁ„o r·pida"
+"Cria√ß√£o de atalho na barra de inicializa√ß√£o r√°pida"
 
 CustomInstallDescription
-"Selecionar componentes personalizados para instalaÁ„o."
+"Selecionar componentes personalizados para instala√ß√£o."
 
 DirectoryPermissionText
-"VocÍ n„o tem permiss„o para escrever em <%Dir%>."
+"Voc√™ n√£o tem permiss√£o para escrever em <%Dir%>."
 
 ExitText
-"VocÍ est· certo que deseja sair do instalador?"
+"Voc√™ est√° certo que deseja sair do instalador?"
 
 FileBeingInstalledText
 "Copiando <%FileBeingInstalled%>"
@@ -59,22 +59,22 @@ InstallApplicationText
 "Instalar <%AppName%>"
 
 InstallCompleteText
-"InstalaÁ„o de arquivos completa..."
+"Instala√ß√£o de arquivos completa..."
 
 InstallPrepareText
 "Preparando para instalar..."
 
 InstallStartupText
-"Ser· instalado <%AppName%> em seu computador.  Continuar?"
+"Ser√° instalado <%AppName%> em seu computador.  Continuar?"
 
 LaunchApplicationText
 "Iniciar <%AppName%>"
 
 Next
-"PrÛximo"
+"Pr√≥ximo"
 
 No
-"N„o"
+"N√£o"
 
 OK
 "OK"
@@ -83,13 +83,13 @@ ProgramFilesDescription
 "Arquivos comuns de programa"
 
 RequireRootText
-"VocÍ precisa ser root para executar o instalador."
+"Voc√™ precisa ser root para executar o instalador."
 
 SeparatorText
 "InstallJammer"
 
 TypicalInstallDescription
-"Uma instalaÁ„o tÌpica."
+"Uma instala√ß√£o t√≠pica."
 
 UninstallApplicationText
 "Desinstalar <%AppName%>"
@@ -101,15 +101,15 @@ UpdateRegistryText
 "Atualizando Registro do Windows..."
 
 UninstallStartupText
-"<%AppName%> ser· removido completamento do seu computador.  VocÍ tem\
+"<%AppName%> ser√° removido completamento do seu computador.  Voc√™ tem\
 certeza que deseja continuar?"
 
 UninstallLeftoverText
-"Alguns componentes n„o puderam ser removidos. VocÍ deseja delet·-los assim mesmo\
- (n„o recomendado)?"
+"Alguns componentes n√£o puderam ser removidos. Voc√™ deseja delet√°-los assim mesmo\
+ (n√£o recomendado)?"
 
 VersionHelpText
-"Este programa ir· instalar <%AppName%> vers„o <%Version%>."
+"Este programa ir√° instalar <%AppName%> vers√£o <%Version%>."
 
 ViewReadmeText
 "Veja o Readme"
@@ -120,7 +120,7 @@ Yes
 
 LocateJavaRuntime {
     PromptMessage
-    "Por favor informe onde o Java Runtime est· instalado"
+    "Por favor informe onde o Java Runtime est√° instalado"
 
     StatusMessage
     "Localizando Java Runtime..."
@@ -128,13 +128,13 @@ LocateJavaRuntime {
 
 TextWindow {
     Title
-    "TÌtulo da Janela"
+    "T√≠tulo da Janela"
 
     Caption
     "Caption"
 
     Message
-    "Mensagens aparecer„o aqui."
+    "Mensagens aparecer√£o aqui."
 
     CloseButton
     "<%Close%>"

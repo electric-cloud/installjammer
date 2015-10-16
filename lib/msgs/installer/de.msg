@@ -2,7 +2,7 @@ ApplicationReadmeText
 "<%AppName%> LiesMich"
 
 Back
-"Zurück"
+"ZurÃ¼ck"
 
 Browse
 "Durchsuchen..."
@@ -17,22 +17,22 @@ Cancel
 "Abbrechen"
 
 CleanupInstallText
-"Installation wird aufgeräumt..."
+"Installation wird aufgerÃ¤umt..."
 
 Close
-"Schließen"
+"SchlieÃŸen"
 
 CreateDesktopShortcutText
-"Desktop Verknüpfung anlegen"
+"Desktop VerknÃ¼pfung anlegen"
 
 CreateQuickLaunchShortcutText
-"Verknüpfung Schnellstartleiste anlegen"
+"VerknÃ¼pfung Schnellstartleiste anlegen"
 
 CustomInstallDescription
 "Auswahl der benutzerdefinierten Komponenten zur Installation."
 
 DirectoryPermissionText
-"Sie haben keine Schreibberechtigung für das Verzeichnis <%Dir%>."
+"Sie haben keine Schreibberechtigung fÃ¼r das Verzeichnis <%Dir%>."
 
 ExitText
 "Wollen Sie dieses Setup wirklich beenden?"
@@ -83,7 +83,7 @@ ProgramFilesDescription
 "Allgemeine Programmdateien"
 
 RequireRootText
-"Sie müssen root sein, um diese Installationsroutine auszuführen."
+"Sie mÃ¼ssen root sein, um diese Installationsroutine auszufÃ¼hren."
 
 SeparatorText
 "InstallJammer"
@@ -102,11 +102,11 @@ UpdateRegistryText
 
 UninstallStartupText
 "Dies wird <%AppName%> vollkommen von Ihrem System entfernen. Wollen Sie dies\
-wirklich durchführen?"
+wirklich durchfÃ¼hren?"
 
 UninstallLeftoverText
-"Einige Komponenten konnten nicht entfernt werden. Möchten Sie diese trotzdem\
-löschen (nicht empfohlen)?"
+"Einige Komponenten konnten nicht entfernt werden. MÃ¶chten Sie diese trotzdem\
+lÃ¶schen (nicht empfohlen)?"
 
 VersionHelpText
 "Dieses Program wird <%AppName%> Version <%Version%> installieren."
@@ -131,7 +131,7 @@ TextWindow {
     "Window Titel"
 
     Caption
-    "Überschrift"
+    "Ãœberschrift"
 
     Message
     "Meldung kommt hier."

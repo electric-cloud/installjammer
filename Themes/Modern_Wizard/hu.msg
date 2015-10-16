@@ -1,19 +1,19 @@
 ChooseComponents {
     Title
-    "Komponensek kiválasztása"
+    "Komponensek kivĞ±lasztĞ±sa"
 
     Subtitle
-    "Válassza ki a telepítend\u0151 komponenseket."
+    "VĞ±lassza ki a telepĞ½tend\u0151 komponenseket."
 
     Caption
-    "Válassza ki azokat a komponenseket, amelyeket fel akar telepíteni,\
-     és ne válassza ki azokat, amelyeket nem akar telepíteni."
+    "VĞ±lassza ki azokat a komponenseket, amelyeket fel akar telepĞ½teni,\
+     Ğ¹s ne vĞ±lassza ki azokat, amelyeket nem akar telepĞ½teni."
 
     Message
-    "<%SpaceRequiredText%> szabad hely szükséges"
+    "<%SpaceRequiredText%> szabad hely szÑŒksĞ¹ges"
 
     DescriptionLabel
-    "Leírás"
+    "LeĞ½rĞ±s"
 
     NextButton
     "<%Next%> >"
@@ -27,13 +27,13 @@ ChooseComponents {
 
 CopyFiles {
     Title
-    "Telepítés"
+    "TelepĞ½tĞ¹s"
 
     Subtitle
-    "<%AppName%> telepítése"
+    "<%AppName%> telepĞ½tĞ¹se"
 
     Caption
-    "Kérem várjon, amíg a Telepít\u0151 a <%AppName%> programot feltelepíti a gépére."
+    "KĞ¹rem vĞ±rjon, amĞ½g a TelepĞ½t\u0151 a <%AppName%> programot feltelepĞ½ti a gĞ¹pĞ¹re."
 
     Message
     ""
@@ -56,10 +56,10 @@ CopyFiles {
 
 CustomBlankPane1 {
     Caption
-    "A fejléc jön ide."
+    "A fejlĞ¹c jÑ†n ide."
 
     Message
-    "Az üzenet jön ide."
+    "Az ÑŒzenet jÑ†n ide."
 
     NextButton
     "<%Next%> >"
@@ -73,16 +73,16 @@ CustomBlankPane1 {
 
 CustomBlankPane2 {
     Title
-    "Cím"
+    "CĞ½m"
 
     Subtitle
-    "Alcím"
+    "AlcĞ½m"
 
     Caption
-    "Leírás"
+    "LeĞ½rĞ±s"
 
     Message
-    "Üzenet"
+    "Ğ¬zenet"
 
     NextButton
     "<%Next%> >"
@@ -96,19 +96,19 @@ CustomBlankPane2 {
 
 CustomTextPane1 {
     Title
-    "Cím"
+    "CĞ½m"
 
     Subtitle
-    "Alcím"
+    "AlcĞ½m"
 
     Caption
-    "Leírás"
+    "LeĞ½rĞ±s"
 
     Message
-    "Üzenet"
+    "Ğ¬zenet"
 
     Text
-    "A saját szövegedet rakd ide."
+    "A sajĞ±t szÑ†vegedet rakd ide."
 
     NextButton
     "<%Next%> >"
@@ -122,16 +122,16 @@ CustomTextPane1 {
 
 License {
     Title
-    "Licensz elfogadása"
+    "Licensz elfogadĞ±sa"
 
     Subtitle
-    "Kérem olvassa el figyelmesen a következ\u0151 licensz megállapodást."
+    "KĞ¹rem olvassa el figyelmesen a kÑ†vetkez\u0151 licensz megĞ±llapodĞ±st."
 
     AcceptRadiobutton
-    "Elfogadom a licensz megállapodás feltételeit."
+    "Elfogadom a licensz megĞ±llapodĞ±s feltĞ¹teleit."
 
     DeclineRadiobutton
-    "Nem fogadom el a licensz megállapodás feltételeit."
+    "Nem fogadom el a licensz megĞ±llapodĞ±s feltĞ¹teleit."
 
     NextButton
     "<%Next%> >"
@@ -145,10 +145,10 @@ License {
 
 Readme {
     Title
-    "Olvassa el információk"
+    "Olvassa el informĞ±ciÑƒk"
 
     Subtitle
-    "Olvassa el információk a <%AppName%> alkalmazáshoz"
+    "Olvassa el informĞ±ciÑƒk a <%AppName%> alkalmazĞ±shoz"
 
     Caption
     ""
@@ -171,22 +171,22 @@ Readme {
 
 SelectDestination {
     Title
-    "Válassza ki a cél könyvtárat"
+    "VĞ±lassza ki a cĞ¹l kÑ†nyvtĞ±rat"
 
     Subtitle
-    "Hova kellene a <%AppName%> alkalmazást telepíteni?"
+    "Hova kellene a <%AppName%> alkalmazĞ±st telepĞ½teni?"
 
     Caption
-    "A telepít\u0151 a <%AppName%> programot a következ\u0151 könyvtárba telepíti.\n\n
-     Ahhoz, hogy ebbe könyvtárba kerüljön kattintson a <%Next%> gombra\
-     Ahhoz, hogy más könyvtárba kerüljön kattintson a <%Browse%> gombra."
+    "A telepĞ½t\u0151 a <%AppName%> programot a kÑ†vetkez\u0151 kÑ†nyvtĞ±rba telepĞ½ti.\n\n
+     Ahhoz, hogy ebbe kÑ†nyvtĞ±rba kerÑŒljÑ†n kattintson a <%Next%> gombra\
+     Ahhoz, hogy mĞ±s kÑ†nyvtĞ±rba kerÑŒljÑ†n kattintson a <%Browse%> gombra."
 
     Message
     ""
 
     BrowseText
-    "A folytatáshoz nyomja meg a <%Next%> gombot. \
-     Ha másik könyvtárat szeretne kiválasztani nyomja meg a <%Browse%> gombot."
+    "A folytatĞ±shoz nyomja meg a <%Next%> gombot. \
+     Ha mĞ±sik kÑ†nyvtĞ±rat szeretne kivĞ±lasztani nyomja meg a <%Browse%> gombot."
 
     NextButton
     "<%Next%> >"
@@ -201,20 +201,20 @@ SelectDestination {
     "<%Browse%>"
 
     DestinationLabel
-    "Cél könyvtár"
+    "CĞ¹l kÑ†nyvtĞ±r"
 }
 
 SelectProgramFolder {
     Title
-    "Program mappa kiválasztás"
+    "Program mappa kivĞ±lasztĞ±s"
 
     Subtitle
-    "Kérem válassza ki a program mappát!"
+    "KĞ¹rem vĞ±lassza ki a program mappĞ±t!"
 
     Caption
-    "A telepít\u0151 a program ikonokat a lentebb listázott Program mappához fogja hozzáadni. \
-	 Megváltoztathatja az új mappa nevét, vagy kiválaszthat egy már létez\u0151t a listáról. \
-     Kattintson a <%Next%> gombra a folytatáshoz."
+    "A telepĞ½t\u0151 a program ikonokat a lentebb listĞ±zott Program mappĞ±hoz fogja hozzĞ±adni. \
+	 MegvĞ±ltoztathatja az ÑŠj mappa nevĞ¹t, vagy kivĞ±laszthat egy mĞ±r lĞ¹tez\u0151t a listĞ±rÑƒl. \
+     Kattintson a <%Next%> gombra a folytatĞ±shoz."
 
     Message
     ""
@@ -223,7 +223,7 @@ SelectProgramFolder {
     "Program mappa:"
 
     FolderListLabel
-    "Létez\u0151 mappák:"
+    "LĞ¹tez\u0151 mappĞ±k:"
 
     NextButton
     "<%Next%> >"
@@ -235,16 +235,16 @@ SelectProgramFolder {
     "<%Cancel%>"
 
     AllUsersCheckbutton
-    "Létrehozza a program mappát az összes felhasználónak?"
+    "LĞ¹trehozza a program mappĞ±t az Ñ†sszes felhasznĞ±lÑƒnak?"
 }
 
 SetupComplete {
     Caption
-    "InstallJammer Varázsló befejez\u0151dött"
+    "InstallJammer VarĞ±zslÑƒ befejez\u0151dÑ†tt"
 
     Message
-    "Az InstallJammer Varázsló sikeresen telepítette a <%AppName%> alkalmazást. \
-	 Kattintson a <%Finish%> gombra ahhoz, hogy kilépjen a varázslóból."
+    "Az InstallJammer VarĞ±zslÑƒ sikeresen telepĞ½tette a <%AppName%> alkalmazĞ±st. \
+	 Kattintson a <%Finish%> gombra ahhoz, hogy kilĞ¹pjen a varĞ±zslÑƒbÑƒl."
 
     NextButton
     "<%Finish%>"
@@ -258,19 +258,19 @@ SetupComplete {
 
 SetupType {
     Title
-    "Telepítés típusa"
+    "TelepĞ½tĞ¹s tĞ½pusa"
 
     Subtitle
-    "Válassza ki az Önnek legjobban megfelel\u0151 telepítési módot."
+    "VĞ±lassza ki az Ğ¦nnek legjobban megfelel\u0151 telepĞ½tĞ¹si mÑƒdot."
 
     Caption
-    "Válassza ki a kívánt telepítési típust!"
+    "VĞ±lassza ki a kĞ½vĞ±nt telepĞ½tĞ¹si tĞ½pust!"
 
     Message
     ""
 
     DescriptionLabel
-    "Leírás"
+    "LeĞ½rĞ±s"
 
     NextButton
     "<%Next%> >"
@@ -284,25 +284,25 @@ SetupType {
 
 StartCopyingFiles {
     Title
-    "Állományok másolásának elkezdése"
+    "Ğ‘llomĞ±nyok mĞ±solĞ±sĞ±nak elkezdĞ¹se"
 
     Subtitle
-    "Tekintse át a beállításokat, miel\u0151tt átmásolnánk az állományokat!"
+    "Tekintse Ğ±t a beĞ±llĞ½tĞ±sokat, miel\u0151tt Ğ±tmĞ±solnĞ±nk az Ğ±llomĞ±nyokat!"
 
     Caption
-    "A telepít\u0151nek elég információja van ahhoz, hogy a program állományait\
-	elkezdje másolni. Ha meg akarja nézni vagy változtatni a beállításokat,\
-	akkor kattintson a <%Back%> gombra. Ha elégedett a beállításokkal, akkor\
-	kattintson a <%Next%> gombra, hogy elkezd\u0151djön a fájlok másolása."
+    "A telepĞ½t\u0151nek elĞ¹g informĞ±ciÑƒja van ahhoz, hogy a program Ğ±llomĞ±nyait\
+	elkezdje mĞ±solni. Ha meg akarja nĞ¹zni vagy vĞ±ltoztatni a beĞ±llĞ½tĞ±sokat,\
+	akkor kattintson a <%Back%> gombra. Ha elĞ¹gedett a beĞ±llĞ½tĞ±sokkal, akkor\
+	kattintson a <%Next%> gombra, hogy elkezd\u0151djÑ†n a fĞ±jlok mĞ±solĞ±sa."
 
     Message
     ""
 
     Text
-    "Telepítési könyvtár:
+    "TelepĞ½tĞ¹si kÑ†nyvtĞ±r:
             <%InstallDir%>
 
-    Telepítés típusa:
+    TelepĞ½tĞ¹s tĞ½pusa:
             <%InstallType%>"
 
     NextButton
@@ -317,10 +317,10 @@ StartCopyingFiles {
 
 Uninstall {
     Title
-    "Eltávolítás"
+    "EltĞ±volĞ½tĞ±s"
 
     Subtitle
-    "A <%AppName%> alkalmazás eltávolítása"
+    "A <%AppName%> alkalmazĞ±s eltĞ±volĞ½tĞ±sa"
 
     Caption
     "<%GroupBeingUninstalledText%>"
@@ -346,10 +346,10 @@ Uninstall {
 
 UninstallComplete {
     Caption
-    "Eltávolítás befejez\u0151dött"
+    "EltĞ±volĞ½tĞ±s befejez\u0151dÑ†tt"
 
     Message
-    "A <%AppName%> alkalmazás el lett távolítva a rendszerér\u0151l."
+    "A <%AppName%> alkalmazĞ±s el lett tĞ±volĞ½tva a rendszerĞ¹r\u0151l."
 
     NextButton
     "<%Finish%>"
@@ -363,13 +363,13 @@ UninstallComplete {
 
 UninstallDetails {
     Title
-    "Eltávolítás részletei"
+    "EltĞ±volĞ½tĞ±s rĞ¹szletei"
 
     Subtitle
-    "Az eltávolítás alatt hiba lépett fel!"
+    "Az eltĞ±volĞ½tĞ±s alatt hiba lĞ¹pett fel!"
 
     Caption
-    "A következ\u0151 hibák léptek fel az eltávolítás alatt:"
+    "A kÑ†vetkez\u0151 hibĞ±k lĞ¹ptek fel az eltĞ±volĞ½tĞ±s alatt:"
 
     Message
     ""
@@ -390,22 +390,22 @@ UninstallDetails {
 
 UserInformation {
     Title
-    "Vásárlói információk"
+    "VĞ±sĞ±rlÑƒi informĞ±ciÑƒk"
 
     Subtitle
-    "Kérem írja ide az információkat."
+    "KĞ¹rem Ğ½rja ide az informĞ±ciÑƒkat."
 
     Caption
-    "Kérem írja be a nevét és a munkahelyének nevét."
+    "KĞ¹rem Ğ½rja be a nevĞ¹t Ğ¹s a munkahelyĞ¹nek nevĞ¹t."
 
     Message
     ""
 
     UserNameLabel
-    "Felhasználó neve:"
+    "FelhasznĞ±lÑƒ neve:"
 
     CompanyLabel
-    "Cég:"
+    "CĞ¹g:"
 
     NextButton
     "<%Next%> >"
@@ -420,13 +420,13 @@ UserInformation {
 
 Welcome {
     Caption
-    "Isten hozta a <%AppName%> InstallJammer Varázslójában"
+    "Isten hozta a <%AppName%> InstallJammer VarĞ±zslÑƒjĞ±ban"
 
     Message
-    "Ez a <%AppName%> alkalmazás <%Version%> verzióját fogja telepíteni\
-	a számítógépére.\n\n Javasoljuk, hogy zárjon be minden alkalmazást,\
-	miel\u0151tt folytatná.\n\n Kattintson a <%Next%> gombra a folytatáshoz\
-	vagy a <%Cancel%> gombra kilépéshez."
+    "Ez a <%AppName%> alkalmazĞ±s <%Version%> verziÑƒjĞ±t fogja telepĞ½teni\
+	a szĞ±mĞ½tÑƒgĞ¹pĞ¹re.\n\n Javasoljuk, hogy zĞ±rjon be minden alkalmazĞ±st,\
+	miel\u0151tt folytatnĞ±.\n\n Kattintson a <%Next%> gombra a folytatĞ±shoz\
+	vagy a <%Cancel%> gombra kilĞ¹pĞ¹shez."
 
     NextButton
     "<%Next%> >"
@@ -440,13 +440,13 @@ Welcome {
 
 InstallPassword {
     Title
-    "Jelszavas telepítés"
+    "Jelszavas telepĞ½tĞ¹s"
 
     Subtitle
-    "Ez a telepítés egy jelszót igényel a folytatáshoz."
+    "Ez a telepĞ½tĞ¹s egy jelszÑƒt igĞ¹nyel a folytatĞ±shoz."
 
     Caption
-    "Kérem gépelje be a jelszót."
+    "KĞ¹rem gĞ¹pelje be a jelszÑƒt."
 
     Message
     ""

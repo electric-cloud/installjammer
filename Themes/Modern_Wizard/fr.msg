@@ -1,12 +1,12 @@
 ChooseComponents {
     Title
-    "Sélectionnez les composants"
+    "SÐ¹lectionnez les composants"
 
     Subtitle
-    "Sélectionnez les composants devant être installés."
+    "SÐ¹lectionnez les composants devant Ðºtre installÐ¹s."
 
     Caption
-    "Sélectionner les composants à installer et déselectionner les composants à ne pas installer."
+    "SÐ¹lectionner les composants Ð° installer et dÐ¹selectionner les composants Ð° ne pas installer."
 
     Message
     "<%SpaceRequiredText%> d'espace requis"
@@ -55,7 +55,7 @@ CopyFiles {
 
 CustomBlankPane1 {
     Caption
-    "Saisir la légende ici."
+    "Saisir la lÐ¹gende ici."
 
     Message
     "Saisir le message ici."
@@ -78,7 +78,7 @@ CustomBlankPane2 {
     "Sous-titre"
 
     Caption
-    "Légende"
+    "LÐ¹gende"
 
     Message
     "Message"
@@ -101,13 +101,13 @@ CustomTextPane1 {
     "Sous-titre"
 
     Caption
-    "Légende"
+    "LÐ¹gende"
 
     Message
     "Message"
 
     Text
-    "Saisissez votre texte personnalisé ici."
+    "Saisissez votre texte personnalisÐ¹ ici."
 
     NextButton
     "<%Next%> >"
@@ -170,22 +170,22 @@ Readme {
 
 SelectDestination {
     Title
-    "Sélectionnez le répertoire d'installation"
+    "SÐ¹lectionnez le rÐ¹pertoire d'installation"
 
     Subtitle
-    "Où installer <%AppName%> ?"
+    "OÑ‰ installer <%AppName%> ?"
 
     Caption
-    "L'installation de <%AppName%> s'effectuera dans le répertoire suivant.\n\nPour installer\
-     dans ce répertoire, cliquez sur le bouton SUIVANT.\n\nPour installer dans un autre répertoire, cliquez\
-     sur le bouton PARCOURIR et sélectionnez un autre répertoire."
+    "L'installation de <%AppName%> s'effectuera dans le rÐ¹pertoire suivant.\n\nPour installer\
+     dans ce rÐ¹pertoire, cliquez sur le bouton SUIVANT.\n\nPour installer dans un autre rÐ¹pertoire, cliquez\
+     sur le bouton PARCOURIR et sÐ¹lectionnez un autre rÐ¹pertoire."
 
     Message
     ""
 
     BrowseText
-    "Pour continuer, cliquez sur SUIVANT.  Pour sélectionner un répertoire\
-     différent, cliquez sur PARCOURIR."
+    "Pour continuer, cliquez sur SUIVANT.  Pour sÐ¹lectionner un rÐ¹pertoire\
+     diffÐ¹rent, cliquez sur PARCOURIR."
 
     NextButton
     "<%Next%> >"
@@ -200,19 +200,19 @@ SelectDestination {
     "<%Browse%>"
 
     DestinationLabel
-    "Répertoire d'installation"
+    "RÐ¹pertoire d'installation"
 }
 
 SelectProgramFolder {
     Title
-    "Sélectionnez le dossier Programme"
+    "SÐ¹lectionnez le dossier Programme"
 
     Subtitle
-    "Sélectionnez un dossier Programme SVP."
+    "SÐ¹lectionnez un dossier Programme SVP."
 
     Caption
-    "L'installation ajoutera les icônes de programme au dossier Programme affiché ci-dessous. \
-     Vous pouvez saisir un nouveau nom de dossier ou en sélectionner un dans la liste des dossiers existants. \
+    "L'installation ajoutera les icÑ„nes de programme au dossier Programme affichÐ¹ ci-dessous. \
+     Vous pouvez saisir un nouveau nom de dossier ou en sÐ¹lectionner un dans la liste des dossiers existants. \
      Cliquez sur SUIVANT pour continuer."
 
     Message
@@ -234,15 +234,15 @@ SelectProgramFolder {
     "<%Cancel%>"
 
     AllUsersCheckbutton
-    "Créer le dossier programme pour tous les utilisateurs"
+    "CrÐ¹er le dossier programme pour tous les utilisateurs"
 }
 
 SetupComplete {
     Caption
-    "L'assistant InstallJammer est terminé"
+    "L'assistant InstallJammer est terminÐ¹"
 
     Message
-    "L'assistant InstallJammer a installé <%AppName%> avec succès. \
+    "L'assistant InstallJammer a installÐ¹ <%AppName%> avec succÐ¸s. \
      Cliquez sur TERMINER pour quitter l'assistant."
 
     NextButton
@@ -260,7 +260,7 @@ SetupType {
     "Type d'installation"
 
     Subtitle
-    "Sélectionnez le type d'installation convenant le mieux à vos besoins."
+    "SÐ¹lectionnez le type d'installation convenant le mieux Ð° vos besoins."
 
     Caption
     "Cliquez sur le type d'installation que vous souhaitez."
@@ -286,18 +286,18 @@ StartCopyingFiles {
     "Copie des fichiers"
 
     Subtitle
-    "Contrôle du paramétrage avant la copie de fichiers"
+    "ContrÑ„le du paramÐ¹trage avant la copie de fichiers"
 
     Caption
-    "L'installeur a maintenant assez d'informations pour commencer à copier les fichiers.  Si\
-     vous voulez revoir ou modifier le paramétrage, cliquez sur PRECEDENT.  Si vous êtes\
-     satisfait du paramétrage, cliquez sur suivant pour commencer à copier les fichiers."
+    "L'installeur a maintenant assez d'informations pour commencer Ð° copier les fichiers.  Si\
+     vous voulez revoir ou modifier le paramÐ¹trage, cliquez sur PRECEDENT.  Si vous Ðºtes\
+     satisfait du paramÐ¹trage, cliquez sur suivant pour commencer Ð° copier les fichiers."
 
     Message
     ""
 
     Text
-    "Répertoire d'installation:
+    "RÐ¹pertoire d'installation:
             <%InstallDir%>
 
     Type d'installation:
@@ -315,10 +315,10 @@ StartCopyingFiles {
 
 Uninstall {
     Title
-    "Désinstallation"
+    "DÐ¹sinstallation"
 
     Subtitle
-    "Désinstallation de <%AppName%>"
+    "DÐ¹sinstallation de <%AppName%>"
 
     Caption
     "<%GroupBeingUninstalledText%>"
@@ -344,10 +344,10 @@ Uninstall {
 
 UninstallComplete {
     Caption
-    "Désinstallation terminée"
+    "DÐ¹sinstallation terminÐ¹e"
 
     Message
-    "<%AppName%> a été désinstallé de votre système."
+    "<%AppName%> a Ð¹tÐ¹ dÐ¹sinstallÐ¹ de votre systÐ¸me."
 
     NextButton
     "<%Finish%>"
@@ -361,13 +361,13 @@ UninstallComplete {
 
 UninstallDetails {
     Title
-    "Details de la désinstallation"
+    "Details de la dÐ¹sinstallation"
 
     Subtitle
-    "Des erreurs sont apparues pendant la désinstallation"
+    "Des erreurs sont apparues pendant la dÐ¹sinstallation"
 
     Caption
-    "Les erreurs suivantes sont apparues pendant la désinstallation:"
+    "Les erreurs suivantes sont apparues pendant la dÐ¹sinstallation:"
 
     Message
     ""
@@ -394,7 +394,7 @@ UserInformation {
     "Saisissez vos informations SVP."
 
     Caption
-    "Saisissez votre nom et votre société."
+    "Saisissez votre nom et votre sociÐ¹tÐ¹."
 
     Message
     ""
@@ -403,7 +403,7 @@ UserInformation {
     "Nom:"
 
     CompanyLabel
-    "Société:"
+    "SociÐ¹tÐ¹:"
 
     NextButton
     "<%Next%> >"
@@ -422,7 +422,7 @@ Welcome {
 
     Message
     "Ceci installera <%AppName%> version <%Version%> sur votre ordinateur. \
-    \n\nIl est recommandé de fermer toutes les autres applications avant\
+    \n\nIl est recommandÐ¹ de fermer toutes les autres applications avant\
     de continuer.\n\nCliquez sur SUIVANT pour continuer ou ANNULER pour quitter l'installation."
 
     NextButton

@@ -1019,7 +1019,7 @@ proc Build { {platforms {}} } {
 
     if {$real} {
         set fp [open [::InstallJammer::BuildDir messages] w]
-        fconfigure $fp -translation lf -encoding utf-8
+        fconfigure $fp -translation auto -encoding utf-8
         puts $fp [::InstallJammer::GetTextData -setups Install \
             -activeonly 1 -build 1]
         close $fp

@@ -3,16 +3,16 @@
 ## BEGIN LICENSE BLOCK
 ##
 ## Copyright (C) 2002  Damon Courtney
-## 
+##
 ## This program is free software; you can redistribute it and/or
 ## modify it under the terms of the GNU General Public License
 ## version 2 as published by the Free Software Foundation.
-## 
+##
 ## This program is distributed in the hope that it will be useful,
 ## but WITHOUT ANY WARRANTY; without even the implied warranty of
 ## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ## GNU General Public License version 2 for more details.
-## 
+##
 ## You should have received a copy of the GNU General Public License
 ## along with this program; if not, write to the
 ##     Free Software Foundation, Inc.
@@ -32,15 +32,15 @@ proc lempty { list } {
 
 proc lassign { list args } {
     foreach elem $list varName $args {
-    	upvar 1 $varName var
-	set var $elem
+            upvar 1 $varName var
+        set var $elem
     }
 }
 
 proc lremove { list args } {
     foreach arg $args {
-	set x [lsearch -exact $list $arg]
-	set list [lreplace $list $x $x]
+        set x [lsearch -exact $list $arg]
+        set list [lreplace $list $x $x]
     }
     return $list
 }
@@ -49,7 +49,7 @@ proc lreverse { list } {
     set new [list]
     set len [llength $list]
     for {set i [expr $len - 1]} {$i >= 0} {incr i -1} {
-	lappend new [lindex $list $i]
+        lappend new [lindex $list $i]
     }
     return $new
 }
@@ -57,7 +57,7 @@ proc lreverse { list } {
 proc lassign_array {list arrayName args} {
     upvar 1 $arrayName array
     foreach elem $list var $args {
-	set array($var) $elem
+        set array($var) $elem
     }
 }
 
@@ -122,7 +122,7 @@ proc debugging { {value ""} {level ""} {file ""} } {
                 set ::debugfp ""
             }
             set ::info(DebugLog) $file
-            set ::debugfp [open $file w]
+            set ::debugfp [open $file a]
         } else {
             return -code error "bad debugging option \"$level\":\
                 should be console or file"
@@ -165,19 +165,6 @@ proc debugging { {value ""} {level ""} {file ""} } {
         }
     } elseif {$value ne ""} {
         return -code error "usage: debugging ?on|off? ?file|console? ?logfile?"
-    }
-
-    if {$::debug || $::info(Debugging)} {
-        echo "Debugging is turned on"
-    } else {
-        echo "Debugging is turned off"
-    }
-    if {$::debug} {
-        echo "Debug output is being written to the console"
-    }
-    if {$::info(Debugging)} {
-        echo "Debug output is being saved to a debug log file"
-        echo "Debug log file is <%DebugLog%>" 1
     }
 }
 
@@ -288,7 +275,7 @@ proc ::more { args } {
         set prompt [::InstallJammer::SubstText "<%ConsolePauseQuitText%>"]
     }
 
-    catch { 
+    catch {
         set i 0
         foreach line [split $text \n] {
             puts stdout $line
@@ -373,7 +360,7 @@ proc SafeSet { varName value } {
 proc SafeArraySet { arrayName list } {
     upvar 1 $arrayName array
     foreach {varName elem} $list {
-	if {![info exists array($varName)]} { set array($varName) $elem }
+        if {![info exists array($varName)]} { set array($varName) $elem }
     }
 }
 
@@ -523,7 +510,7 @@ proc ::InstallJammer::CommonInit {} {
                          && [file tail $::env(_)] eq "wine"}]
 
     array set conf {
-	commonInit   1
+        commonInit   1
 
         logInit      0
 
@@ -559,7 +546,7 @@ proc ::InstallJammer::CommonInit {} {
         }
 
         VirtualTextMap            {}
-	VirtualTextRecursionLimit 10
+        VirtualTextRecursionLimit 10
     }
 
     lappend conf(VirtualTextMap) "\\" "\\\\" "\[" "\\\["
@@ -657,7 +644,7 @@ proc ::InstallJammer::CommonInit {} {
             WizardFinished     0
             WizardCancelled    0
 
-	    Errors             ""
+            Errors             ""
 
             SilentMode         0
             DefaultMode        0
@@ -671,7 +658,7 @@ proc ::InstallJammer::CommonInit {} {
             Testing            0
         }
 
-	SafeArraySet info {
+        SafeArraySet info {
             AllowLanguageSelection 1
             PromptForRoot          1
 
@@ -691,7 +678,7 @@ proc ::InstallJammer::CommonInit {} {
 
             SpaceRequiredText      "<%DiskSpace <%SpaceRequired%>%>"
             SpaceAvailableText     "<%DiskSpace <%SpaceAvailable%>%>"
-	}
+        }
 
         set info(Home) [::InstallJammer::HomeDir]
 
@@ -727,7 +714,25 @@ proc ::InstallJammer::CommonInit {} {
             ::InstallJammer::SetWindowsPlatform
             ::InstallJammer::SetupRegVirtualText
         } else {
-            set info(Username)        [id user]
+            set status [catch {id user} userName]
+            if {$status != 0} {
+                if {[info exists ::env(USER)]} {
+                    if {[string length $::env(USER)] > 0} {
+                        set userName $::env(USER)
+                    } else {
+                        ::InstallAPI::ErrorMessage -message \
+                            "The USER environment variable is empty." \
+                            -title "Error"
+                        ::exit 1
+                    }
+                } else {
+                    ::InstallAPI::ErrorMessage -message \
+                        "The USER environment variable does not exist." \
+                        -title "Error"
+                    ::exit 1
+                }
+            }
+            set info(Username)        $userName
             set info(PathSeparator)   :
             set info(HasKDEDesktop)   [::InstallJammer::HasKDEDesktop]
             set info(HasGnomeDesktop) [::InstallJammer::HasGnomeDesktop]
@@ -768,27 +773,27 @@ proc ::InstallJammer::CommonInit {} {
             -language all -command ::InstallJammer::ModifyInstallTitle
 
         ::InstallAPI::VirtualTextAPI -do settype -type directory -virtualtext {
-	    CommonStartMenu
+            CommonStartMenu
             Desktop
             FileBeingInstalled
-	    GnomeCommonStartMenu
-	    GnomeDesktop
-	    GnomeStartMenu
-	    Home
-	    InstallDir
-	    Installer
-	    InstallLogDirectory
-	    InstallSource
-	    KDECommonStartMenu
-	    KDEDesktop
-	    KDEStartMenu
+            GnomeCommonStartMenu
+            GnomeDesktop
+            GnomeStartMenu
+            Home
+            InstallDir
+            Installer
+            InstallLogDirectory
+            InstallSource
+            KDECommonStartMenu
+            KDEDesktop
+            KDEStartMenu
             ProgramReadme
             ProgramLicense
-	    ProgramExecutable
-	    ProgramFolder
-	    Uninstaller
-	    UninstallDirectory
-	}
+            ProgramExecutable
+            ProgramFolder
+            Uninstaller
+            UninstallDirectory
+        }
     }
 
     SafeArraySet info {
@@ -956,28 +961,28 @@ proc ::InstallJammer::InitializeCommandLineOptions {} {
 
     set CommandLineOptions(help) {
         {} Switch 0 0 {}
-        "display this information" 
+        "Display this information."
     }
 
     set CommandLineOptions(temp) {
         TempRoot String 0 0 {}
-        "set the temporary directory used by this program"
+        "Directory used to store temporary files used by the installer."
     }
 
     set CommandLineOptions(version) {
         {} Switch 0 0 {}
-        "display installer version information"
+        "Display installer version information."
     }
 
     if {$info(EnableResponseFiles)} {
         set CommandLineOptions(response-file) {
             ResponseFile String 0 0 {}
-            "a file to read installer responses from"
+            "A file to read installer responses from."
         }
 
         set CommandLineOptions(save-response-file) {
             SaveResponseFile String 0 0 {}
-            "a file to write installer responses to when the installer exits"
+            "A file to write installer responses to when the installer exits."
         }
     }
 
@@ -1056,9 +1061,9 @@ proc ::InstallJammer::PlaceWindow { id args } {
     }
 
     array set data "
-	-anchor $anchor
-	-width  [winfo reqwidth  $target]
-	-height [winfo reqheight $target]
+        -anchor $anchor
+        -width  [winfo reqwidth  $target]
+        -height [winfo reqheight $target]
     "
 
     array set data $args
@@ -1070,56 +1075,56 @@ proc ::InstallJammer::PlaceWindow { id args } {
     lassign [wm maxsize .] maxw maxh
     set anchor $data(-anchor)
     switch -- $anchor {
-	"center" {
-	    set x0 [expr ($sw - $w) / 2 - [winfo vrootx $target]]
-	    set y0 [expr ($sh - $h) / 2 - [winfo vrooty $target]]
-	}
+        "center" {
+            set x0 [expr ($sw - $w) / 2 - [winfo vrootx $target]]
+            set y0 [expr ($sh - $h) / 2 - [winfo vrooty $target]]
+        }
 
-	"n" {
-	    set x0 [expr ($sw - $w)  / 2 - [winfo vrootx $target]]
-	    set y0 20
-	}
+        "n" {
+            set x0 [expr ($sw - $w)  / 2 - [winfo vrootx $target]]
+            set y0 20
+        }
 
-	"ne" {
-	    set x0 [expr $maxw - $w - 40]
-	    set y0 20
-	}
+        "ne" {
+            set x0 [expr $maxw - $w - 40]
+            set y0 20
+        }
 
-	"e" {
-	    set x0 [expr $maxw - $w - 40]
-	    set y0 [expr ($sh - $h) / 2 - [winfo vrooty $target]]
-	}
+        "e" {
+            set x0 [expr $maxw - $w - 40]
+            set y0 [expr ($sh - $h) / 2 - [winfo vrooty $target]]
+        }
 
-	"se" {
-	    set x0 [expr $maxw - $w - 40]
-	    set y0 [expr $maxh - $h - 80]
-	}
+        "se" {
+            set x0 [expr $maxw - $w - 40]
+            set y0 [expr $maxh - $h - 80]
+        }
 
-	"s" {
-	    set x0 [expr ($sw - $w)  / 2 - [winfo vrootx $target]]
-	    set y0 [expr $maxh - $h - 80]
-	}
+        "s" {
+            set x0 [expr ($sw - $w)  / 2 - [winfo vrootx $target]]
+            set y0 [expr $maxh - $h - 80]
+        }
 
-	"sw" {
-	    set x0 20
-	    set y0 [expr $maxh - $h - 80]
-	}
+        "sw" {
+            set x0 20
+            set y0 [expr $maxh - $h - 80]
+        }
 
-	"w" {
-	    set x0 20
-	    set y0 [expr ($sh - $h) / 2 - [winfo vrooty $target]]
-	}
+        "w" {
+            set x0 20
+            set y0 [expr ($sh - $h) / 2 - [winfo vrooty $target]]
+        }
 
-	"nw" {
-	    set x0 20
-	    set y0 20
-	}
+        "nw" {
+            set x0 20
+            set y0 20
+        }
 
-	default {
-	    append msg "bad anchor \"$anchor\": must be"
-	    append msg "n, ne, e, se, s, sw, w, nw or center"
-	    return -code error $msg
-	}
+        default {
+            append msg "bad anchor \"$anchor\": must be"
+            append msg "n, ne, e, se, s, sw, w, nw or center"
+            return -code error $msg
+        }
     }
 
     set x "+$x0"
@@ -1162,7 +1167,7 @@ proc ::InstallJammer::FindObjByName { name objects } {
 proc ::InstallJammer::GetPaneProc { id prefix } {
     set proc $prefix.$id
     if {![::InstallJammer::CommandExists $proc]} {
-    	set proc $prefix.[$id component]
+            set proc $prefix.[$id component]
     }
     if {[::InstallJammer::CommandExists $proc]}  { return $proc }
 }
@@ -1253,7 +1258,7 @@ proc ::InstallJammer::ExecuteActions { id args } {
         set when "Before Next Action is Executed"
         while {1} {
             $obj execute
-            
+
             ## Check the after conditions.  If the conditions fail,
             ## we want to repeat the action until they succeed.
             ## This is mainly for console actions to repeat if their
@@ -1418,7 +1423,7 @@ proc ::InstallJammer::RaiseEventHandler { wizard } {
         set base [$id window]
         ::InstallJammer::TransientParent $base
 
-        wm withdraw $wizard 
+        wm withdraw $wizard
 
         ::InstallJammer::UpdateWidgets
 
@@ -1695,16 +1700,16 @@ proc ::InstallJammer::SetObjectProperties { id args } {
     foreach {property value} $args {
         if {!$_args(-safe) || ![info exists Properties($id,$property)]} {
             if {$property eq "Alias"} {
-		catch { $id alias $value }
+                catch { $id alias $value }
 
-		if {[info exists ::InstallJammer::aliasmap($id)]} {
-		    $id CleanupAlias
-		}
+                if {[info exists ::InstallJammer::aliasmap($id)]} {
+                    $id CleanupAlias
+                }
 
-		if {$value ne ""} {
-		    set ::InstallJammer::aliases($value) $id
-		    set ::InstallJammer::aliasmap($id) $value
-		}
+                if {$value ne ""} {
+                    set ::InstallJammer::aliases($value) $id
+                    set ::InstallJammer::aliasmap($id) $value
+                }
             }
 
             if {$property eq "Active"} { $id active $value }
@@ -1870,12 +1875,12 @@ proc ::InstallJammer::GetText { id field args } {
     }
 
     if {$found} {
-	if {$_args(-forcesubst)
-	    || ($_args(-subst) && [$id get $field,subst subst] && $subst)} {
-	    set text [::InstallJammer::SubstText $text]
-	}
+        if {$_args(-forcesubst)
+            || ($_args(-subst) && [$id get $field,subst subst] && $subst)} {
+            set text [::InstallJammer::SubstText $text]
+        }
 
-	return $text
+        return $text
     }
 }
 
@@ -1905,13 +1910,13 @@ proc ::InstallJammer::SetText { args } {
     set class [winfo class $w]
 
     if {$class eq "Frame" || $class eq "TFrame"} {
-    	foreach child [winfo children $w] {
-	    set class [winfo class $child]
-	    if {$class eq "Label" || $class eq "TLabel"} {
-	    	set w $child
-		break
-	    }
-	}
+            foreach child [winfo children $w] {
+            set class [winfo class $child]
+            if {$class eq "Label" || $class eq "TLabel"} {
+                    set w $child
+                break
+            }
+        }
     }
 
     if {$class eq "Text"} {
@@ -1924,10 +1929,10 @@ proc ::InstallJammer::SetText { args } {
             $w configure -state disabled
         }
     } elseif {($class eq "Label" || $class eq "TLabel")
-    	&& [string length [$w cget -textvariable]]} {
+            && [string length [$w cget -textvariable]]} {
         set [$w cget -textvariable] $text
     } else {
-	$w configure -text $text
+        $w configure -text $text
     }
 }
 
@@ -2131,7 +2136,7 @@ proc ::InstallJammer::UpdateWidgets { args } {
     if {$step eq ""} { return }
 
     if {![llength $_args(-widgets)]} { set _args(-widgets) [$step widgets] }
-    
+
     ::InstallJammer::UpdateSelectedWidgets $_args(-widgets) $wizard $step
 
     if {$_args(-buttons)} { ::InstallJammer::UpdateWizardButtons $wizard $step }
@@ -2257,57 +2262,57 @@ proc ::InstallJammer::WindowsDir { dir } {
     set key  "HKEY_LOCAL_MACHINE\\$curr"
 
     switch -- $dir {
-	"MYDOCUMENTS" {
-	    set windir [::InstallJammer::WindowsDir PERSONAL]
-	}
+        "MYDOCUMENTS" {
+            set windir [::InstallJammer::WindowsDir PERSONAL]
+        }
 
-	"WINDOWS" {
-	    if {[info exists ::env(SYSTEMROOT)]} {
-		set windir $::env(SYSTEMROOT)
+        "WINDOWS" {
+            if {[info exists ::env(SYSTEMROOT)]} {
+                set windir $::env(SYSTEMROOT)
             } elseif {[info exists ::env(windir)]} {
-		set windir $::env(windir)
-	    } elseif {![catch {registry get $key SystemRoot} result]} {
-		set windir $result
-	    } else {
-		set windir "C:\\Windows"
-	    }
-	}
+                set windir $::env(windir)
+            } elseif {![catch {registry get $key SystemRoot} result]} {
+                set windir $result
+            } else {
+                set windir "C:\\Windows"
+            }
+        }
 
-	"PROGRAM_FILES" {
-	    if {[info exists ::env(ProgramFiles)]} {
-		set windir $::env(ProgramFiles)
-	    } elseif {![catch {registry get $key ProgramFilesDir} result]} {
-		set windir $result
-	    } else {
-		set windir "C:\\Program Files"
-	    }
-	}
+        "PROGRAM_FILES" {
+            if {[info exists ::env(ProgramFiles)]} {
+                set windir $::env(ProgramFiles)
+            } elseif {![catch {registry get $key ProgramFilesDir} result]} {
+                set windir $result
+            } else {
+                set windir "C:\\Program Files"
+            }
+        }
 
-	"SYSTEM" {
-	    set windir [file join [WindowsDir WINDOWS] system]
-	}
+        "SYSTEM" {
+            set windir [file join [WindowsDir WINDOWS] system]
+        }
 
-	"SYSTEM32" {
-	    set windir [file join [WindowsDir WINDOWS] system32]
-	}
+        "SYSTEM32" {
+            set windir [file join [WindowsDir WINDOWS] system32]
+        }
 
-	"QUICK_LAUNCH" {
-	    set windir [WindowsDir APPDATA]
-	    set windir [file join $windir \
-	    	"Microsoft" "Internet Explorer" "Quick Launch"]
-	}
+        "QUICK_LAUNCH" {
+            set windir [WindowsDir APPDATA]
+            set windir [file join $windir \
+                    "Microsoft" "Internet Explorer" "Quick Launch"]
+        }
 
-	"COMMON_QUICK_LAUNCH" {
-	    set windir [WindowsDir COMMON_APPDATA]
-	    set windir [file join $windir \
-	    	"Microsoft" "Internet Explorer" "Quick Launch"]
-	}
+        "COMMON_QUICK_LAUNCH" {
+            set windir [WindowsDir COMMON_APPDATA]
+            set windir [file join $windir \
+                    "Microsoft" "Internet Explorer" "Quick Launch"]
+        }
 
-	"WALLPAPER" {
-	    set windir [registry get $key WallPaperDir]
-	}
+        "WALLPAPER" {
+            set windir [registry get $key WallPaperDir]
+        }
 
-	default {
+        default {
             ## We couldn't find the directory.  Let's try one more
             ## time by looking through the known registry values.
 
@@ -2363,7 +2368,7 @@ proc ::InstallJammer::WindowsDir { dir } {
 
             ## We still found nothing.  Return the virtual text string.
             if {$windir eq ""} { return <%$dir%> }
-	}
+        }
     }
 
     return [::InstallJammer::Normalize $windir windows]
@@ -2424,15 +2429,15 @@ proc ::InstallJammer::SubstVar { var } {
 
     ## If this variable exists in the info array, return its value.
     if {[info exists info($var)]} {
-	set string $info($var)
+        set string $info($var)
         if {[info exists ::InstallJammer::VTTypes($var)]} {
             if {$::InstallJammer::VTTypes($var) eq "boolean"} {
                 set string [string is true $string]
             } elseif {$::InstallJammer::VTTypes($var) eq "directory"} {
                 set string [::InstallJammer::Normalize $string platform]
             }
-	}
-   	return $string
+        }
+           return $string
     }
 
     ## See if this is a virtual text variable that exists in
@@ -2495,7 +2500,7 @@ proc ::InstallJammer::subst::DOSName { args } {
 
     set file [join $args]
 
-    if {$conf(windows) && [file exists $file]} { 
+    if {$conf(windows) && [file exists $file]} {
         set file [file attributes $file -shortname]
         set file [::InstallJammer::Normalize $file windows]
     }
@@ -2635,26 +2640,34 @@ proc ::InstallJammer::TmpDir { {file ""} } {
     global conf
     global info
 
-    if {![info exists info(TempRoot)] || ![file exists $info(TempRoot)]} {
+    if { [ info exists info(TempRoot) ] } {
+        if { ![file exists $info(TempRoot)] && [catch { set retstr [file mkdir $info(TempRoot)] } errmsg] } {
+            set msg "Cannot create tmp directory $info(TempRoot) due to error: $errmsg"
+            return -code error $msg
+        } elseif { ![DirIsWritable $info(TempRoot)] } {
+            set msg "Cannot use read-only tmp directory $info(TempRoot)"
+            return -code error $msg
+        }
+    } else {
         set dirs [list]
-	if {[info exists ::env(TEMP)]} { lappend dirs $::env(TEMP) }
-	if {[info exists ::env(TMP)]}  { lappend dirs $::env(TMP)  }
+        if {[info exists ::env(TEMP)]} { lappend dirs $::env(TEMP) }
+        if {[info exists ::env(TMP)]}  { lappend dirs $::env(TMP)  }
         if {$conf(windows)} {
             set local [::InstallJammer::WindowsDir LOCAL_APPDATA]
             lappend dirs [file join [file dirname $local] Temp]
 
             lappend dirs [::InstallJammer::WindowsDir INTERNET_CACHE]
 
-	    lappend dirs C:/Windows/Temp
-	    lappend dirs C:/WINNT/Temp
+            lappend dirs C:/Windows/Temp
+            lappend dirs C:/WINNT/Temp
             lappend dirs C:/Temp
 
-	} else {
-	    lappend dirs /usr/tmp /tmp /var/tmp
-	}
+        } else {
+            lappend dirs /usr/tmp /tmp /var/tmp
+        }
 
-	foreach dir $dirs {
-	    if {[DirIsWritable $dir]} {
+        foreach dir $dirs {
+            if {[DirIsWritable $dir]} {
                 if {[info exists ::InstallJammer]} {
                     if {$file ne ""} { set dir [file join $dir $file] }
                     return $dir
@@ -2663,16 +2676,16 @@ proc ::InstallJammer::TmpDir { {file ""} } {
                 break
             }
         }
+    }
 
-        if {![info exists info(TempRoot)]} {
-            if {[info exists ::env(TMP)]} { set tmp $::env(TMP) }
-            if {[info exists ::env(TEMP)]} { set tmp $::env(TEMP) }
-            if {![info exists tmp] || [catch {file mkdir $tmp}]} {
-                return -code error \
-                    "could not find a suitable temporary directory"
-            }
-            set info(TempRoot) $tmp
+    if {![info exists info(TempRoot)]} {
+        if {[info exists ::env(TMP)]} { set tmp $::env(TMP) }
+        if {[info exists ::env(TEMP)]} { set tmp $::env(TEMP) }
+        if {![info exists tmp] || [catch {file mkdir $tmp}]} {
+            return -code error \
+                "could not find a suitable temporary directory"
         }
+        set info(TempRoot) $tmp
     }
 
     if {![info exists info(Temp)]} {
@@ -2683,7 +2696,7 @@ proc ::InstallJammer::TmpDir { {file ""} } {
     if {![file exists $info(Temp)]} { file mkdir $info(Temp) }
 
     if {$file ne ""} {
-	return [::InstallJammer::Normalize [file join $info(Temp) $file]]
+        return [::InstallJammer::Normalize [file join $info(Temp) $file]]
     }
 
     return $info(Temp)
@@ -2801,9 +2814,9 @@ proc ::InstallJammer::SetPermissions { file perm } {
     if {$perm eq ""} { return }
 
     if {$::tcl_platform(platform) eq "windows"} {
-	if {[string length $perm] > 4} { return }
-	lassign [split $perm ""] a h r s
-	file attributes $file -archive $a -hidden $h -readonly $r -system $s
+        if {[string length $perm] > 4} { return }
+        lassign [split $perm ""] a h r s
+        file attributes $file -archive $a -hidden $h -readonly $r -system $s
     } else {
         file attributes $file -permissions $perm
     }
@@ -2827,8 +2840,8 @@ proc ::InstallJammer::CleanupTmpDirs {} {
     set time [expr {[clock seconds] - 86400}]
     foreach dir [glob -nocomplain -type d -dir $tmp ijtmp_*] {
         if {[DirIsEmpty $dir]
-	    || [file exists [file join $dir .done]]
-	    || [file mtime $dir] < $time} {
+            || [file exists [file join $dir .done]]
+            || [file mtime $dir] < $time} {
             catch { file delete -force $dir }
         }
     }
@@ -2884,11 +2897,11 @@ proc ::InstallJammer::PauseCheck {} {
     if {$info(InstallStopped)} { return 0 }
 
     while {[file exists $conf(pause)]} {
-	if {[file exists $conf(stop)]} {
-	    set info(InstallStopped) 1
+        if {[file exists $conf(stop)]} {
+            set info(InstallStopped) 1
             return 0
-	}
-	after 500
+        }
+        after 500
     }
 
     return 1
@@ -2907,14 +2920,14 @@ proc ::InstallJammer::UninstallDirectory { dir {force ""} } {
 ## the registry key is empty, we will delete that as well.
 proc ::InstallJammer::UninstallRegistryKey {key {value ""}} {
     if {![lempty $value]} {
-	catch { registry delete $key $value }
-	if {[catch { registry keys $key } keys]} { return }
-	if {[catch { registry values $key } values]} { return }
-	if {[lempty $keys] && [lempty $values]} {
-	    UninstallRegistryKey $key
-	}
+        catch { registry delete $key $value }
+        if {[catch { registry keys $key } keys]} { return }
+        if {[catch { registry values $key } values]} { return }
+        if {[lempty $keys] && [lempty $values]} {
+            UninstallRegistryKey $key
+        }
     } else {
-	catch { registry delete $key }
+        catch { registry delete $key }
     }
 }
 
@@ -3089,8 +3102,8 @@ proc ::InstallJammer::Message { args } {
         }
     } else {
         set _args(-icon) "info"
-	array set _args $args
-	if {![info exists _args(-message)]} { return }
+        array set _args $args
+        if {![info exists _args(-message)]} { return }
 
         set chan stdout
         if {$_args(-icon) eq "error"} { set chan stderr }
@@ -3142,7 +3155,7 @@ proc ::InstallJammer::ChooseDirectory { args } {
     }
 
     if {$_args(-usenative)} {
-        set _args(-title) $_args(-message) 
+        set _args(-title) $_args(-message)
         set res [eval ij_chooseDirectory [array get _args]]
     } else {
         unset -nocomplain _args(-usenative)
@@ -3318,17 +3331,17 @@ proc ::InstallJammer::HasKDEDesktop {} {
     if {![file exists $kde]} { return 0 }
 
     if {![info exists info(KDEDesktop)] || [lempty $info(KDEDesktop)]} {
-	set globals [file join $kde share config kdeglobals]
-	set desktop [file join $home Desktop]
-	if {[catch {open $globals} fp]} { return 0 }
-	while {[gets $fp line] != -1} {
-	    if {[regexp {^Desktop=([^\n].*)\n} $line\n trash desktop]} {
-		regsub -all {\$([A-Za-z0-9]+)} $desktop {$::env(\1)} desktop
-		break
-	    }
-	}
-	close $fp
-	set info(KDEDesktop) $desktop
+        set globals [file join $kde share config kdeglobals]
+        set desktop [file join $home Desktop]
+        if {[catch {open $globals} fp]} { return 0 }
+        while {[gets $fp line] != -1} {
+            if {[regexp {^Desktop=([^\n].*)\n} $line\n trash desktop]} {
+                regsub -all {\$([A-Za-z0-9]+)} $desktop {$::env(\1)} desktop
+                break
+            }
+        }
+        close $fp
+        set info(KDEDesktop) $desktop
     }
 
     return [file exists $info(KDEDesktop)]
@@ -3380,22 +3393,22 @@ proc ::InstallJammer::GetLinuxDistribution {} {
     }
 
     foreach lsb_release [list /etc/lsb-release /etc/lsb_release] {
-	if {[file readable $lsb_release]} {
+        if {[file readable $lsb_release]} {
 
-	}
+        }
     }
 
     set check {
-	/etc/mandrake-release    Mandrake
-	/etc/fedora-release      Fedora
-	/etc/SuSE-release        SuSE
-	/etc/debian_version      Debian
-	/etc/gentoo-release      Gentoo
-	/etc/slackware-version   Slackware
-	/etc/turbolinux-release  TurboLinux
-	/etc/yellowdog-release   YellowDog
-	/etc/connectiva-release  Connectiva
-	/etc/redhat-release      Redhat
+        /etc/mandrake-release    Mandrake
+        /etc/fedora-release      Fedora
+        /etc/SuSE-release        SuSE
+        /etc/debian_version      Debian
+        /etc/gentoo-release      Gentoo
+        /etc/slackware-version   Slackware
+        /etc/turbolinux-release  TurboLinux
+        /etc/yellowdog-release   YellowDog
+        /etc/connectiva-release  Connectiva
+        /etc/redhat-release      Redhat
     }
 }
 
@@ -3439,8 +3452,8 @@ proc ::InstallJammer::unpack { src dest {permissions ""} } {
     # Extract the file and copy it to its location.
     set fin [open $src r]
     if {[catch {open $dest w $permissions} fout]} {
-	close $fin
-	return -code error $fout
+        close $fin
+        return -code error $fout
     }
 
     set intrans  binary
@@ -3668,7 +3681,6 @@ proc ::InstallJammer::ShowUsageAndExit { {message ""} {title ""} } {
     ::InstallJammer::InitializeCommandLineOptions
 
     set head --
-    if {$conf(windows)} { set head / }
 
     set usage ""
 
@@ -3701,6 +3713,7 @@ proc ::InstallJammer::ShowUsageAndExit { {message ""} {title ""} } {
 
     incr len 4
     set  pad [expr {$len + 3}]
+    set  width 200
 
     foreach option [lsort -dict [array names options]] {
         lassign $CommandLineOptions($option) name var type x hide values desc
@@ -3712,7 +3725,7 @@ proc ::InstallJammer::ShowUsageAndExit { {message ""} {title ""} } {
 
         set line "  [format %-${len}s $head$options($option)] $desc"
 
-        append usage "\n[::InstallJammer::WrapText $line 0 $pad]"
+        append usage "\n[::InstallJammer::WrapText $line $width $pad]"
 
         if {$type eq "Choice"} {
             set values  [lsort -dict $values]
@@ -3721,7 +3734,7 @@ proc ::InstallJammer::ShowUsageAndExit { {message ""} {title ""} } {
             set choices [string tolower "[join $values ", "] or $last"]
 
             set line "[string repeat " " $pad]Available values: $choices"
-            append usage "\n[::InstallJammer::WrapLine $line 0 $pad]"
+            append usage "\n[::InstallJammer::WrapLine $line $width $pad]"
         }
     }
 
@@ -3775,16 +3788,15 @@ proc ::InstallJammer::ParseCommandLineArguments { argv } {
         }
 
         if {$opt eq "v" || $opt eq "version"} {
-            set message "InstallJammer Installer version $conf(version)\n\n"
             if {$info(RunningInstaller)} {
-                append message "<%VersionHelpText%>"
+                set message "<%VersionHelpText%>"
             } else {
-                append message "<%AppName%> <%Version%>"
+                set message "<%AppName%> <%Version%>"
             }
 
             if {$conf(windows)} {
                 ::InstallJammer::MessageBox -default ok \
-                    -title "InstallJammer Installer" -message [sub $message]
+                    -title [sub "<%AppName%> Installer"] -message [sub $message]
             } else {
                 puts [sub "<%Version%> (<%InstallVersion%>)"]
                 puts ""
@@ -3928,7 +3940,7 @@ proc ::InstallJammer::SetupModeVariables {} {
 proc ::InstallJammer::CommonExit { {cleanupTmp 1} } {
     global conf
 
-    catch { 
+    catch {
         if {$conf(windows) && $conf(UpdateWindowsRegistry)} {
             registry broadcast Environment -timeout 1
         }
@@ -3966,7 +3978,7 @@ proc ::InstallJammer::WrapText { string {width 0} {start 0} } {
 
     set splitstring {}
     foreach line [split $string "\n"] {
-	lappend splitstring [::InstallJammer::WrapLine $line $width $start]
+        lappend splitstring [::InstallJammer::WrapLine $line $width $start]
     }
     return [join $splitstring "\n"]
 }
@@ -3981,12 +3993,12 @@ proc ::InstallJammer::WrapLine { line {width 0} {start 0} } {
     set line  [lindex $words 0]
     set lines [list]
     foreach word [lrange $words 1 end] {
-	if {[string length $line] + [string length " $word"] > $width} {
-	    lappend lines $line
+        if {[string length $line] + [string length " $word"] > $width} {
+            lappend lines $line
 
             set slen $start
-	    set line [string repeat " " $slen]$word
-	} else {
+            set line [string repeat " " $slen]$word
+        } else {
             append line " $word"
         }
     }
@@ -4083,12 +4095,12 @@ proc ::InstallJammer::ConsoleProgressBar { percent } {
 
     if {![info exists conf(ConsoleProgressWidth)] || $percent == 0} {
         SafeSet conf(ConsoleProgressNewline) 0
-	SafeSet conf(ConsoleProgressFormat) {[%s%s] %d%%}
-	set s [string map {%s "" %d "" %% %} $conf(ConsoleProgressFormat)]
-	set conf(ConsoleProgressWidth) [string length $s]
+        SafeSet conf(ConsoleProgressFormat) {[%s%s] %d%%}
+        set s [string map {%s "" %d "" %% %} $conf(ConsoleProgressFormat)]
+        set conf(ConsoleProgressWidth) [string length $s]
         set conf(ConsoleProgressLastLen) 0
-	SafeSet conf(ConsoleProgressCompletedHash) =
-	SafeSet conf(ConsoleProgressIncompleteHash) -
+        SafeSet conf(ConsoleProgressCompletedHash) =
+        SafeSet conf(ConsoleProgressIncompleteHash) -
     }
 
     set len  0
@@ -4102,13 +4114,13 @@ proc ::InstallJammer::ConsoleProgressBar { percent } {
     set done  [expr {$width - $cnt}]
     set args  [list $conf(ConsoleProgressFormat)]
     if {$conf(ConsoleProgressCompletedHash) ne ""} {
-	lappend args [string repeat $conf(ConsoleProgressCompletedHash) $cnt]
+        lappend args [string repeat $conf(ConsoleProgressCompletedHash) $cnt]
     }
     if {$conf(ConsoleProgressIncompleteHash) ne ""} {
-	lappend args [string repeat $conf(ConsoleProgressIncompleteHash) $done]
+        lappend args [string repeat $conf(ConsoleProgressIncompleteHash) $done]
     }
     if {[string match "*%d*" $conf(ConsoleProgressFormat)]} {
-	lappend args $pct
+        lappend args $pct
     }
 
     set string [eval format $args]
@@ -4379,16 +4391,16 @@ proc ::InstallJammer::Class { name body } {
 
     private variable oldalias ""
     public variable alias "" {
-	if {$oldalias ne ""} {
-	    $this CleanupAlias
-	}
-	set oldalias $alias
+        if {$oldalias ne ""} {
+            $this CleanupAlias
+        }
+        set oldalias $alias
 
-	if {$alias ne ""} {
-	    set ::InstallJammer::aliases($alias) $id
-	    set ::InstallJammer::aliasmap($id) $alias
+        if {$alias ne ""} {
+            set ::InstallJammer::aliases($alias) $id
+            set ::InstallJammer::aliasmap($id) $alias
             set ::InstallJammer::Properties($id,Alias) $alias
-	}
+        }
     }
 }
 
@@ -4417,7 +4429,7 @@ itcl::class File {
     inherit TreeObject
 
     constructor {args} {
-	eval configure $args
+        eval configure $args
     } {
         eval configure $args
     }
@@ -4500,45 +4512,45 @@ itcl::class File {
     }
 
     method destfile {} {
-	return [file join [destdir] [destfilename]]
+        return [file join [destdir] [destfilename]]
     }
 
     method destfilename {} {
-	if {$targetfilename eq ""} {
-	    return [file tail $name]
-	} else {
-	    return [::InstallJammer::SubstText $targetfilename]
-	}
+        if {$targetfilename eq ""} {
+            return [file tail $name]
+        } else {
+            return [::InstallJammer::SubstText $targetfilename]
+        }
     }
 
     method srcfilename {} {
-    	return [file tail $name]
+            return [file tail $name]
     }
 
     method createdir {} {
-	::InstallJammer::CreateDir [destdir]
+        ::InstallJammer::CreateDir [destdir]
     }
 
     method install {} {
-	global conf
+        global conf
 
-	if {![::InstallJammer::PauseCheck]} { return 0 }
+        if {![::InstallJammer::PauseCheck]} { return 0 }
 
         ::set dest [install[type]]
 
-	if {![::InstallJammer::PauseCheck]} { return 0 }
+        if {![::InstallJammer::PauseCheck]} { return 0 }
 
         if {$conf(windows)} {
             ::InstallJammer::SetPermissions $dest $attributes
         } else {
             if {[type] eq "dir"} {
-		if {$permissions eq ""} {
+                if {$permissions eq ""} {
                     ::set permissions $::info(DefaultDirectoryPermission)
                 }
 
-		if {[info commands output] eq "output"} {
-		    output [list :DIR $dest $permissions]
-		}
+                if {[info commands output] eq "output"} {
+                    output [list :DIR $dest $permissions]
+                }
 
                 ::InstallJammer::SetPermissions $dest 00777
             }
@@ -4579,14 +4591,14 @@ itcl::class File {
     }
 
     method installfile { {dest ""} {createDir 1} {checkMethod 1} {logFile 1} } {
-	global conf
-	global info
+        global conf
+        global info
 
         if {$createDir} {
             createdir
         }
 
-	::set src [srcfile]
+        ::set src [srcfile]
         if {![file exists $src] && [info exists info(ArchiveFileList)]} {
             while {![file exists $src]} {
                 ::InstallJammer::PauseInstall
@@ -4608,12 +4620,12 @@ itcl::class File {
             ::set doInstall [checkFileMethod $dest]
         }
 
-	::set info(FileSize) $size
-	if {!$doInstall} {
+        ::set info(FileSize) $size
+        if {!$doInstall} {
             ::set progress ::InstallJammer::IncrProgress
             if {[::InstallJammer::CommandExists $progress]} { $progress $size }
-	    return $dest
-	}
+            return $dest
+        }
 
         if {$permissions eq ""} {
             if {$conf(windows)} {
@@ -4623,15 +4635,15 @@ itcl::class File {
             }
         }
 
-	if {!$size} {
+        if {!$size} {
             ## Empty file.
-	    if {[catch { open $dest w $permissions } err]} {
-		return -code error $err
-	    }
-	    close $err
-	} else {
-	    ::InstallJammer::unpack $src $dest $permissions
-	}
+            if {[catch { open $dest w $permissions } err]} {
+                return -code error $err
+            }
+            close $err
+        } else {
+            ::InstallJammer::unpack $src $dest $permissions
+        }
 
         if {$info(InstallStopped)} { return }
 
@@ -4645,7 +4657,7 @@ itcl::class File {
             ::InstallJammer::SetVersionInfo $dest $version
         }
 
-	return $dest
+        return $dest
     }
 
     method group {} {
@@ -4733,7 +4745,7 @@ itcl::class File {
 ::itcl::class InstallComponent {
     inherit TreeObject
 
-    constructor { args } { 
+    constructor { args } {
         eval configure $args
     } {
         ::set name [string tolower $id]
@@ -4871,7 +4883,7 @@ itcl::class File {
                     ::set widgetData($widget,[string range $opt 1 end]) $val
                 }
             }
-            
+
             "type" {
                 if {[info exists widgetData($widget,type)]} {
                     return $widgetData($widget,type)
@@ -5025,7 +5037,7 @@ itcl::class File {
     public variable title       ""
     public variable window      ""
     public variable created     0
-    
+
     public variable command     ""
     public variable operator    "AND"
     public variable component   ""

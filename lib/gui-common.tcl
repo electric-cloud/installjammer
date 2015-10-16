@@ -1644,7 +1644,7 @@ proc Frame.components {} {
     $prop insert end root standard -text "Standard Properties" -open 1
     ::ComponentObject addproperties $prop foo
 
-    $prop insert end root text -text "Text Properties" -open 0
+    $prop insert end root text -text "Text Properties" -open 1
     ::ComponentObject addtextfields $prop text foo
 
     ::InstallJammer::AddPlatformPropertyNode $prop ::ComponentTree::details
@@ -1732,7 +1732,7 @@ proc Frame.setupTypes {} {
 
     ::SetupTypeObject addproperties $prop foo
 
-    $prop insert end root text -text "Text Properties" -open 0
+    $prop insert end root text -text "Text Properties" -open 1
     ::SetupTypeObject addtextfields $prop text foo
 
     ::InstallJammer::AddPlatformPropertyNode $prop ::SetupTypeTree::details

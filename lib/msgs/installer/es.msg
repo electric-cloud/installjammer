@@ -1,8 +1,8 @@
 ApplicationReadmeText
-"<%AppName%> Léeme"
+"<%AppName%> LÃ©eme"
 
 Back
-"Atrás"
+"AtrÃ¡s"
 
 Browse
 "Examinar..."
@@ -17,7 +17,7 @@ Cancel
 "Cancelar"
 
 CleanupInstallText
-"Limpiando instalación..."
+"Limpiando instalaciÃ³n..."
 
 Close
 "Cerrar"
@@ -29,13 +29,13 @@ CreateQuickLaunchShortcutText
 "Crear icono en Barra de Tareas"
 
 CustomInstallDescription
-"Seleccione los componentes de la instalación."
+"Seleccione los componentes de la instalaciÃ³n."
 
 DirectoryPermissionText
 "No tiene permisos para escribir en <%Dir%>."
 
 ExitText
-"¿Seguro que desea salir de la instalación?"
+"Â¿Seguro que desea salir de la instalaciÃ³n?"
 
 FileBeingInstalledText
 "Copiando <%FileBeingInstalled%>"
@@ -59,13 +59,13 @@ InstallApplicationText
 "Instalar <%AppName%>"
 
 InstallCompleteText
-"Instalación completa..."
+"InstalaciÃ³n completa..."
 
 InstallPrepareText
-"Preparando instalación..."
+"Preparando instalaciÃ³n..."
 
 InstallStartupText
-"Se va a instalar <%AppName%> en su equipo.  ¿Continuar?"
+"Se va a instalar <%AppName%> en su equipo.  Â¿Continuar?"
 
 LaunchApplicationText
 "Ejecutar <%AppName%>"
@@ -89,48 +89,48 @@ SeparatorText
 "InstallJammer"
 
 TypicalInstallDescription
-"Una instalación típica."
+"Una instalaciÃ³n tÃ­pica."
 
 UninstallApplicationText
 "Desinstalar <%AppName%>"
 
 UninstallPrepareText
-"Preparando desinstalación..."
+"Preparando desinstalaciÃ³n..."
 
 UpdateRegistryText
 "Actualizando Registro de Windows..."
 
 UninstallStartupText
-"Se eliminará completamente <%AppName%> de su sistema. ¿Seguro que desea esto?"
+"Se eliminarÃ¡ completamente <%AppName%> de su sistema. Â¿Seguro que desea esto?"
 
 UninstallLeftoverText
-"Algunos componentes no pudieron ser eliminados. ¿Desea borrarlos de todos\
+"Algunos componentes no pudieron ser eliminados. Â¿Desea borrarlos de todos\
  modos? (no recomendado)"
 
 ViewReadmeText
-"Ver Léeme"
+"Ver LÃ©eme"
 
 Yes
-"Sí"
+"SÃ­"
 
 
 LocateJavaRuntime {
     PromptMessage
-    "Por favor, localice su Entorno de Ejecución Java (JRE)"
+    "Por favor, localice su Entorno de EjecuciÃ³n Java (JRE)"
 
     StatusMessage
-    "Buscando Entorno de Ejecución Java (JRE)..."
+    "Buscando Entorno de EjecuciÃ³n Java (JRE)..."
 }
 
 TextWindow {
     Title
-    "Título de la Ventana"
+    "TÃ­tulo de la Ventana"
 
     Caption
     "Leyenda"
 
     Message
-    "Mensaje aquí."
+    "Mensaje aquÃ­."
 
     CloseButton
     "<%Close%>"

@@ -3,17 +3,17 @@ ChooseComponents {
     "Seleccionar Componentes"
 
     Subtitle
-    "Seleccionar los componentes de la instalaciÛn."
+    "Seleccionar los componentes de la instalaci—Én."
 
     Caption
-    "Seleccione los componentes que desea instalar y elimine aquÈllos\
+    "Seleccione los componentes que desea instalar y elimine aqu–πllos\
      que no desea que sean instalados."
 
     Message
     "<%SpaceRequiredText%> de espacio requerido"
 
     DescriptionLabel
-    "DescripciÛn"
+    "Descripci—Én"
 
     NextButton
     "<%Next%> >"
@@ -56,10 +56,10 @@ CopyFiles {
 
 CustomBlankPane1 {
     Caption
-    "Leyenda aquÌ."
+    "Leyenda aqu–Ω."
 
     Message
-    "Mensaje aquÌ."
+    "Mensaje aqu–Ω."
 
     NextButton
     "<%Next%> >"
@@ -73,10 +73,10 @@ CustomBlankPane1 {
 
 CustomBlankPane2 {
     Title
-    "TÌtulo"
+    "T–Ωtulo"
 
     Subtitle
-    "SubtÌtulo"
+    "Subt–Ωtulo"
 
     Caption
     "Leyenda"
@@ -96,10 +96,10 @@ CustomBlankPane2 {
 
 CustomTextPane1 {
     Title
-    "TÌtulo"
+    "T–Ωtulo"
 
     Subtitle
-    "SubtÌtulo"
+    "Subt–Ωtulo"
 
     Caption
     "Leyenda"
@@ -108,7 +108,7 @@ CustomTextPane1 {
     "Mensaje"
 
     Text
-    "Escriba su texto personalizado aquÌ."
+    "Escriba su texto personalizado aqu–Ω."
 
     NextButton
     "<%Next%> >"
@@ -128,10 +128,10 @@ License {
     "Por favor lea atentamente el siguiente acuerdo de licencia."
 
     AcceptRadiobutton
-    "Acepto los tÈrminos de este acuerdo de licencia."
+    "Acepto los t–πrminos de este acuerdo de licencia."
 
     DeclineRadiobutton
-    "NO acepto los tÈrminos de este acuerdo de licencia."
+    "NO acepto los t–πrminos de este acuerdo de licencia."
 
     NextButton
     "<%Next%> >"
@@ -145,10 +145,10 @@ License {
 
 Readme {
     Title
-    "LÈeme"
+    "L–πeme"
 
     Subtitle
-    "InformaciÛn sobre <%AppName%>"
+    "Informaci—Én sobre <%AppName%>"
 
     Caption
     ""
@@ -174,10 +174,10 @@ SelectDestination {
     "Escoja Carpeta Destino"
 
     Subtitle
-    "øDÛnde desea instalar <%AppName%>?"
+    "—óD—Énde desea instalar <%AppName%>?"
 
     Caption
-    "Se instalar· <%AppName%> en la siguiente carpeta. Para instalar\
+    "Se instalar–± <%AppName%> en la siguiente carpeta. Para instalar\
      en esta carpeta, pulse Siguiente. Para instalar en una carpeta diferente,\
      pulse Examinar y seleccione otra."
 
@@ -212,7 +212,7 @@ SelectProgramFolder {
     "Por favor, seleccione un grupo de programas."
 
     Caption
-    "Se instalar·n iconos en el Grupo de Programas siguiente.\
+    "Se instalar–±n iconos en el Grupo de Programas siguiente.\
     Puede escribir un nuevo nombre de grupo o seleccionarlo\
     de la lista de grupos existentes.\
     Pulse Siguiente para continuar."
@@ -241,10 +241,10 @@ SelectProgramFolder {
 
 SetupComplete {
     Caption
-    "InstalaciÛn Completa"
+    "Instalaci—Én Completa"
 
     Message
-    "Se ha instalado <%AppName%> con Èxito. \
+    "Se ha instalado <%AppName%> con –πxito. \
      Pulse Finalizar para salir de este wizard."
 
     NextButton
@@ -259,19 +259,19 @@ SetupComplete {
 
 SetupType {
     Title
-    "Tipo de InstalaciÛn"
+    "Tipo de Instalaci—Én"
 
     Subtitle
-    "Seleccione el tipo de instalaciÛn que m·s se ajuste a sus necesidades."
+    "Seleccione el tipo de instalaci—Én que m–±s se ajuste a sus necesidades."
 
     Caption
-    "Pulse el tipo de instalaciÛn que prefiere."
+    "Pulse el tipo de instalaci—Én que prefiere."
 
     Message
     ""
 
     DescriptionLabel
-    "DescripciÛn"
+    "Descripci—Én"
 
     NextButton
     "<%Next%> >"
@@ -288,22 +288,22 @@ StartCopyingFiles {
     "Comenzar a Copiar Archivos"
 
     Subtitle
-    "Revise la configuraciÛn antes de copiar los archivos"
+    "Revise la configuraci—Én antes de copiar los archivos"
 
     Caption
-    "Se ha recopilado la informaciÛn necesaria para comenzar a copiar los\
-    archivos del programa. Si desea revisar o cambiar la configuraciÛn,\
-    pulse Atr·s. Si est· conforme con la configuraciÛn, pulse Siguiente para\
+    "Se ha recopilado la informaci—Én necesaria para comenzar a copiar los\
+    archivos del programa. Si desea revisar o cambiar la configuraci—Én,\
+    pulse Atr–±s. Si est–± conforme con la configuraci—Én, pulse Siguiente para\
     comenzar a copiar los archivos."
 
     Message
     ""
 
     Text
-    "Directorio de InstalaciÛn:
+    "Directorio de Instalaci—Én:
             <%InstallDir%>
 
-    Tipo de InstalaciÛn:
+    Tipo de Instalaci—Én:
             <%InstallType%>"
 
     NextButton
@@ -347,7 +347,7 @@ Uninstall {
 
 UninstallComplete {
     Caption
-    "DesinstalaciÛn Completa"
+    "Desinstalaci—Én Completa"
 
     Message
     "<%AppName%> ha sido eliminado de su sistema."
@@ -364,13 +364,13 @@ UninstallComplete {
 
 UninstallDetails {
     Title
-    "Detalles de DesinstalaciÛn"
+    "Detalles de Desinstalaci—Én"
 
     Subtitle
-    "Errores durante la eliminaciÛn"
+    "Errores durante la eliminaci—Én"
 
     Caption
-    "Ocurrieron los siguientes errores durante el proceso de desinstalaciÛn:"
+    "Ocurrieron los siguientes errores durante el proceso de desinstalaci—Én:"
 
     Message
     ""
@@ -391,7 +391,7 @@ UninstallDetails {
 
 UserInformation {
     Title
-    "InformaciÛn de Usuario"
+    "Informaci—Én de Usuario"
 
     Subtitle
     "Por favor introduzca sus datos de usuario."
@@ -424,9 +424,9 @@ Welcome {
     "Bienvenido al InstallJammer Wizard para <%AppName%>"
 
     Message
-    "Este programa instalar· <%AppName%> versiÛn <%Version%> en su equipo.\
-    \n\nSe recomienda cerrar las dem·s aplicaciones antes de continuar. \
-    \n\nPulse Siguiente para continuar o Cancelar para salir de la instalaciÛn."
+    "Este programa instalar–± <%AppName%> versi—Én <%Version%> en su equipo.\
+    \n\nSe recomienda cerrar las dem–±s aplicaciones antes de continuar. \
+    \n\nPulse Siguiente para continuar o Cancelar para salir de la instalaci—Én."
 
     NextButton
     "<%Next%> >"

@@ -11,59 +11,59 @@ BuildFileText
 "Kuriamas <%Tail <%FileBeingInstalled%>%>..."
 
 BuildUninstallText
-"Kuriama ğalinimo programa..."
+"Kuriama Ã°alinimo programa..."
 
 Cancel
 "Atsisakyti"
 
 CleanupInstallText
-"Iğvalomas diegimas..."
+"IÃ°valomas diegimas..."
 
 Close
-"Uşverti"
+"UÃ¾verti"
 
 ConsolePauseQuitText
-"-- Spauskite tarpà tam kad tæsti arba 'q' kad baigti --"
+"-- Spauskite tarpÃ  tam kad tÃ¦sti arba 'q' kad baigti --"
 
 ConsolePauseText
-"-- Spauskite tarpà tam kad tæsti --"
+"-- Spauskite tarpÃ  tam kad tÃ¦sti --"
 
 ConsoleSelectDestinationText
-"Kur norëtumëte ádiegti <%AppName%>?"
+"Kur norÃ«tumÃ«te Ã¡diegti <%AppName%>?"
 
 CreateDesktopShortcutText
-"Sukurti darbalaukio ğaukiná"
+"Sukurti darbalaukio Ã°aukinÃ¡"
 
 CreateQuickLaunchShortcutText
-"Sukurti sparèiosios paleisties ğaukiná"
+"Sukurti sparÃ¨iosios paleisties Ã°aukinÃ¡"
 
 CustomInstallDescription
-"Pasirinkiti komponentus ádiegimui."
+"Pasirinkiti komponentus Ã¡diegimui."
 
 DirectoryNameErrorText
-"Katalogas negali turëti ğiø şenklø:
+"Katalogas negali turÃ«ti Ã°iÃ¸ Ã¾enklÃ¸:
         \\ / : * ? \" < > |"
 
 DirectoryPermissionText
-"Jûs neturite teisës rağyti á <%Dir%>."
+"JÃ»s neturite teisÃ«s raÃ°yti Ã¡ <%Dir%>."
 
 DisplayName
 "<%AppName%>"
 
 DownloadingFilesText
-"Atsiunèiami failai..."
+"AtsiunÃ¨iami failai..."
 
 ExitText
-"Ar jûs ásitikinæs, kad norite iğeiti iğ ğios diegimo programos?"
+"Ar jÃ»s Ã¡sitikinÃ¦s, kad norite iÃ°eiti iÃ° Ã°ios diegimo programos?"
 
 FileBeingInstalledText
 "Kopijuojama <%FileBeingInstalled%>"
 
 FileBeingUninstalledText
-"Ğalinama <%FileBeingUninstalled%>"
+"Ãalinama <%FileBeingUninstalled%>"
 
 FileOverwriteText
-"Failas <%FileBeingInstalled%> jau yra. Ar norëtumëte já perrağyti?"
+"Failas <%FileBeingInstalled%> jau yra. Ar norÃ«tumÃ«te jÃ¡ perraÃ°yti?"
 
 Finish
 "Pabaiga"
@@ -72,13 +72,13 @@ GroupBeingInstalledText
 "Diegiama <%GroupBeingInstalled%>..."
 
 GroupBeingUninstalledText
-"Ğalinama <%GroupBeingUninstalled%>"
+"Ãalinama <%GroupBeingUninstalled%>"
 
 Help
 "Pagalba"
 
 InstallApplicationText
-"Ádiegti <%AppName%>"
+"Ãdiegti <%AppName%>"
 
 InstallationCompleteText
 "Diegimas baigtas."
@@ -90,16 +90,16 @@ InstallingApplicationText
 "Diegema <%AppName%>..."
 
 InstallErrorText
-"Diegimo metu ávyko klaida."
+"Diegimo metu Ã¡vyko klaida."
 
 InstallPrepareText
-"Ruoğiamasi diegimui..."
+"RuoÃ°iamasi diegimui..."
 
 InstallStartupText
-"Tai ádiegs <%AppName%> á jûsø kompiuterá. Tæsti?"
+"Tai Ã¡diegs <%AppName%> Ã¡ jÃ»sÃ¸ kompiuterÃ¡. TÃ¦sti?"
 
 InstallTitleText
-"<%AppName%> Ádiegimo programa"
+"<%AppName%> Ãdiegimo programa"
 
 LaunchApplicationText
 "Paleisti <%AppName%>"
@@ -114,25 +114,25 @@ OK
 "Gerai"
 
 PasswordIncorrectText
-"Slaptaşodis yra neteisingas."
+"SlaptaÃ¾odis yra neteisingas."
 
 ProgramFilesDescription
 "Bendri Programos Failai"
 
 PromptForDirectoryMessage
-"Prağom pasirinkti katalogà, tada pasirinkti Gerai."
+"PraÃ°om pasirinkti katalogÃ , tada pasirinkti Gerai."
 
 PromptForDirectoryNewFolderText
-"Sukurti naujà katalogà"
+"Sukurti naujÃ  katalogÃ "
 
 PromptForDirectoryTitle
-"Parinkti katalogà"
+"Parinkti katalogÃ "
 
 PromptForRootText
-"Prağom ávesti jûsø root slaptaşodá."
+"PraÃ°om Ã¡vesti jÃ»sÃ¸ root slaptaÃ¾odÃ¡."
 
 RequireRootText
-"Jûs turite bûti root kad paleistumëte ğià diegimo programà."
+"JÃ»s turite bÃ»ti root kad paleistumÃ«te Ã°iÃ  diegimo programÃ ."
 
 SeparatorText
 "InstallJammer"
@@ -141,39 +141,39 @@ TypicalInstallDescription
 "Tipinis diegimas."
 
 UninstallApplicationText
-"Pağalinti programà <%AppName%>"
+"PaÃ°alinti programÃ  <%AppName%>"
 
 UninstallPrepareText
-"Ruoğiamasi pağalinti programà..."
+"RuoÃ°iamasi paÃ°alinti programÃ ..."
 
 UpdateRegistryText
 "Atnaujinamas Windows registras..."
 
 UninstallingApplicationText
-"Pağalinama programa <%AppName%>..."
+"PaÃ°alinama programa <%AppName%>..."
 
 UninstallCompleteText
-"Programos pağalinimas atliktas."
+"Programos paÃ°alinimas atliktas."
 
 UninstallStartupText
-"Tai visiğkai pağalins <%AppName%> iğ jûsø sistemos.  Ar jûs ásitikinæs\
+"Tai visiÃ°kai paÃ°alins <%AppName%> iÃ° jÃ»sÃ¸ sistemos.  Ar jÃ»s Ã¡sitikinÃ¦s\
  kad norite tai atlikti?"
 
 UninstallLeftoverText
-"Kai kurie komponentai negali bûti pağalinti. Ar norëtumëte juos pağalinti\
- betkuriuo atvëju (nerekomenduojama)?"
+"Kai kurie komponentai negali bÃ»ti paÃ°alinti. Ar norÃ«tumÃ«te juos paÃ°alinti\
+ betkuriuo atvÃ«ju (nerekomenduojama)?"
 
 UninstallTitleText
-"Programos pağalinimas <%AppName%>"
+"Programos paÃ°alinimas <%AppName%>"
 
 UnpackingFilesText
-"Iğpakuojami failai..."
+"IÃ°pakuojami failai..."
 
 VersionHelpText
-"Programa <%AppName%> versija <%Version%> bus ádiegta."
+"Programa <%AppName%> versija <%Version%> bus Ã¡diegta."
 
 ViewReadmeText
-"Perşiûrëti aprağymà"
+"PerÃ¾iÃ»rÃ«ti apraÃ°ymÃ "
 
 Yes
 "Taip"
@@ -185,21 +185,21 @@ ConsolePause {
 
 LocateJavaRuntime {
     PromptMessage
-    "Prağom pasakyti kur jûsø Java Runtime randasi"
+    "PraÃ°om pasakyti kur jÃ»sÃ¸ Java Runtime randasi"
 
     StatusMessage
-    "Ieğkome Java Runtime..."
+    "IeÃ°kome Java Runtime..."
 }
 
 TextWindow {
     Title
-    "Lango Antrağtë"
+    "Lango AntraÃ°tÃ«"
 
     Caption
     "Pavadinimas"
 
     Message
-    "Praneğimas ávedamas èia."
+    "PraneÃ°imas Ã¡vedamas Ã¨ia."
 
     CloseButton
     "<%Close%>"

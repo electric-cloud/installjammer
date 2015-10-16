@@ -5,100 +5,100 @@ Back
 "Vissza"
 
 Browse
-"Tallózás..."
+"TallÃ³zÃ¡s..."
 
 BuildFileText
-"<%Tail <%FileBeingInstalled%>%> szerkesztése..."
+"<%Tail <%FileBeingInstalled%>%> szerkesztÃ©se..."
 
 BuildUninstallText
-"Uninstall szerkesztése..."
+"Uninstall szerkesztÃ©se..."
 
 Cancel
-"Mégsem"
+"MÃ©gsem"
 
 CleanupInstallText
-"Telepítés takarítása..."
+"TelepÃ­tÃ©s takarÃ­tÃ¡sa..."
 
 Close
-"Bezárás"
+"BezÃ¡rÃ¡s"
 
 ConsolePauseQuitText
-"-- Nyomjon egy szóközt a folytatáshoz, vagy egy 'q'-t a kilépéshez --"
+"-- Nyomjon egy szÃ³kÃ¶zt a folytatÃ¡shoz, vagy egy 'q'-t a kilÃ©pÃ©shez --"
 
 ConsolePauseText
-"-- Nyomjon egy szóközt a folytatáshoz --"
+"-- Nyomjon egy szÃ³kÃ¶zt a folytatÃ¡shoz --"
 
 ConsoleSelectDestinationText
-"Hova akarja telepíteni a <%AppName%> alkalmazást?"
+"Hova akarja telepÃ­teni a <%AppName%> alkalmazÃ¡st?"
 
 CreateDesktopShortcutText
-"Hozzon létre parancsikont az Asztalon"
+"Hozzon lÃ©tre parancsikont az Asztalon"
 
 CreateQuickLaunchShortcutText
-"Hozzon létre a Gyorsindítóban parancsikont"
+"Hozzon lÃ©tre a GyorsindÃ­tÃ³ban parancsikont"
 
 CustomInstallDescription
-"Válassza ki az egyéni komponenseket a telepítéshez."
+"VÃ¡lassza ki az egyÃ©ni komponenseket a telepÃ­tÃ©shez."
 
 DirectoryPermissionText
-"Nincs elég joga a <%Dir%> könyvtárba írni."
+"Nincs elÃ©g joga a <%Dir%> kÃ¶nyvtÃ¡rba Ã­rni."
 
 DisplayName
 "<%AppName%>"
 
 DownloadingFilesText
-"Állományok letöltése..."
+"ÃllomÃ¡nyok letÃ¶ltÃ©se..."
 
 ExitText
-"Biztos, hogy ki akar lépni a telepít\u0151b\u0151l?"
+"Biztos, hogy ki akar lÃ©pni a telepÃ­t\u0151b\u0151l?"
 
 FileBeingInstalledText
-"<%FileBeingInstalled%> másolása"
+"<%FileBeingInstalled%> mÃ¡solÃ¡sa"
 
 FileBeingUninstalledText
-"<%FileBeingUninstalled%> törlése"
+"<%FileBeingUninstalled%> tÃ¶rlÃ©se"
 
 FileOverwriteText
-"A <%FileBeingInstalled%> file már létezik.  Felül akarja írni?"
+"A <%FileBeingInstalled%> file mÃ¡r lÃ©tezik.  FelÃ¼l akarja Ã­rni?"
 
 Finish
-"Befejezés"
+"BefejezÃ©s"
 
 GroupBeingInstalledText
-"<%GroupBeingInstalled%> telepítése..."
+"<%GroupBeingInstalled%> telepÃ­tÃ©se..."
 
 GroupBeingUninstalledText
-"<%GroupBeingUninstalled%> eltávolítása"
+"<%GroupBeingUninstalled%> eltÃ¡volÃ­tÃ¡sa"
 
 Help
-"Sugó"
+"SugÃ³"
 
 InstallApplicationText
-"<%AppName%> telepítése"
+"<%AppName%> telepÃ­tÃ©se"
 
 InstallationCompleteText
-"A telepítés befejez\u0151d\u0151tt."
+"A telepÃ­tÃ©s befejez\u0151d\u0151tt."
 
 InstallCompleteText
-"Az állomány telepítése befejez\u0151d\u0151tt..."
+"Az Ã¡llomÃ¡ny telepÃ­tÃ©se befejez\u0151d\u0151tt..."
 
 InstallingApplicationText
-"<%AppName%> telepítése..."
+"<%AppName%> telepÃ­tÃ©se..."
 
 InstallPrepareText
-"Felkészülés a telepítésre..."
+"FelkÃ©szÃ¼lÃ©s a telepÃ­tÃ©sre..."
 
 InstallStartupText
-"Ez a <%AppName%> programot fogja telepíteni a számítógépére.  Folytatja?"
+"Ez a <%AppName%> programot fogja telepÃ­teni a szÃ¡mÃ­tÃ³gÃ©pÃ©re.  Folytatja?"
 
 InstallTitleText
 "<%AppName%> Setup"
 
 LaunchApplicationText
-"<%AppName%> betöltése"
+"<%AppName%> betÃ¶ltÃ©se"
 
 Next
-"Következ\u0151"
+"KÃ¶vetkez\u0151"
 
 No
 "Nem"
@@ -107,63 +107,63 @@ OK
 "OK"
 
 PasswordIncorrectText
-"Érvénytelen jelszó."
+"Ã‰rvÃ©nytelen jelszÃ³."
 
 ProgramFilesDescription
-"Általános program állományok"
+"ÃltalÃ¡nos program Ã¡llomÃ¡nyok"
 
 PromptForDirectoryMessage
-"Kérem válasszon egy könyvtárat, majd kattintson az OK-ra."
+"KÃ©rem vÃ¡lasszon egy kÃ¶nyvtÃ¡rat, majd kattintson az OK-ra."
 
 PromptForDirectoryTitle
-"Könyvtár tallózása"
+"KÃ¶nyvtÃ¡r tallÃ³zÃ¡sa"
 
 PromptForRootText
-"Kérem gépelje be a root jelszót."
+"KÃ©rem gÃ©pelje be a root jelszÃ³t."
 
 RequireRootText
-"root-nak kell lenni a telepít\u0151 futtatásához."
+"root-nak kell lenni a telepÃ­t\u0151 futtatÃ¡sÃ¡hoz."
 
 SeparatorText
 "InstallJammer"
 
 TypicalInstallDescription
-"Tipikus telepítés."
+"Tipikus telepÃ­tÃ©s."
 
 UninstallApplicationText
-"<%AppName%> eltávolítása"
+"<%AppName%> eltÃ¡volÃ­tÃ¡sa"
 
 UninstallPrepareText
-"Felkészülés az eltávolításra..."
+"FelkÃ©szÃ¼lÃ©s az eltÃ¡volÃ­tÃ¡sra..."
 
 UpdateRegistryText
-"A Windows Registry frissítése..."
+"A Windows Registry frissÃ­tÃ©se..."
 
 UninstallingApplicationText
-"<%AppName%> eltávolítása..."
+"<%AppName%> eltÃ¡volÃ­tÃ¡sa..."
 
 UninstallCompleteText
-"Eltávolítás befejez\u0151d\u0151tt."
+"EltÃ¡volÃ­tÃ¡s befejez\u0151d\u0151tt."
 
 UninstallStartupText
-"Ez teljesen letörli a <%AppName%> alkalmazást a rendszerér\u0151l. \
+"Ez teljesen letÃ¶rli a <%AppName%> alkalmazÃ¡st a rendszerÃ©r\u0151l. \
  Biztos abban, hogy ezt akarja?"
 
 UninstallLeftoverText
-"Néhány elemet nem kellene eltávolítani. \
- Mindenáron töröljük \u0151ket (nem javasolt)?"
+"NÃ©hÃ¡ny elemet nem kellene eltÃ¡volÃ­tani. \
+ MindenÃ¡ron tÃ¶rÃ¶ljÃ¼k \u0151ket (nem javasolt)?"
 
 UninstallTitleText
-"<%AppName%> eltávolítása"
+"<%AppName%> eltÃ¡volÃ­tÃ¡sa"
 
 UnpackingFilesText
-"Állományok kicsomagolása..."
+"ÃllomÃ¡nyok kicsomagolÃ¡sa..."
 
 VersionHelpText
-"Ez a program a <%AppName%> program <%Version%> verzióját fogja telepíteni."
+"Ez a program a <%AppName%> program <%Version%> verziÃ³jÃ¡t fogja telepÃ­teni."
 
 ViewReadmeText
-"OlvassaEl állomány elolvasása"
+"OlvassaEl Ã¡llomÃ¡ny elolvasÃ¡sa"
 
 Yes
 "Igen"
@@ -175,21 +175,21 @@ ConsolePause {
 
 LocateJavaRuntime {
     PromptMessage
-    "Kérem mondja meg, hogy a Java futtatási környezet hol található"
+    "KÃ©rem mondja meg, hogy a Java futtatÃ¡si kÃ¶rnyezet hol talÃ¡lhatÃ³"
 
     StatusMessage
-    "A Java futtatási környezet keresése..."
+    "A Java futtatÃ¡si kÃ¶rnyezet keresÃ©se..."
 }
 
 TextWindow {
     Title
-    "Ablak cím"
+    "Ablak cÃ­m"
 
     Caption
-    "Fejléc"
+    "FejlÃ©c"
 
     Message
-    "Az üzenet jön ide."
+    "Az Ã¼zenet jÃ¶n ide."
 
     CloseButton
     "<%Close%>"

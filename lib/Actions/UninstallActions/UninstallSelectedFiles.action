@@ -182,19 +182,19 @@ proc ::InstallJammer::actions::UninstallSelectedFiles {obj {forceUninstall 0}} {
         ## is a result of our uninstaller not being renamed out of the way.
         ## If so, we don't actually want to report that directory as having
         ## failed since our exit cleanup script should take care of it.
-        set uninstallDir [file normalize [file dirname $conf(uninstall)]]
-        foreach dir $notEmptyDirs {
-            if {!$conf(UninstallRenamed) && $dir eq $uninstallDir} {
-                ## If this is the directory the uninstaller was in, and it
-                ## only has a single file remaining, it's our uninstaller,
-                ## so we don't want to report it as an error.
-                set files [glob -nocomplain -dir $dir *]
-                eval lappend files [glob -nocomplain -dir $dir -type hidden *]
-                if {[llength $files] == 1} { continue }
-            }
-            append info(Errors) "[::InstallJammer::Normalize $dir $p] "
-            append info(Errors) "is not empty\n"
-        }
+        #set uninstallDir [file normalize [file dirname $conf(uninstall)]]
+        #foreach dir $notEmptyDirs {
+        #    if {!$conf(UninstallRenamed) && $dir eq $uninstallDir} {
+        #        ## If this is the directory the uninstaller was in, and it
+        #        ## only has a single file remaining, it's our uninstaller,
+        #        ## so we don't want to report it as an error.
+        #        set files [glob -nocomplain -dir $dir *]
+        #        eval lappend files [glob -nocomplain -dir $dir -type hidden *]
+        #        if {[llength $files] == 1} { continue }
+        #    }
+        #    append info(Errors) "[::InstallJammer::Normalize $dir $p] "
+        #    append info(Errors) "is not empty\n"
+        #}
     }
 
     if {[info exists array(:ENV)]} {

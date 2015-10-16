@@ -50,7 +50,7 @@ DownloadingFilesText
 "Scaricamento dei file..."
 
 ExitText
-"Si Ë sicuri di voler uscire dal programma di installazione?"
+"Si √® sicuri di voler uscire dal programma di installazione?"
 
 FileBeingInstalledText
 "Copia di <%FileBeingInstalled%>"
@@ -59,7 +59,7 @@ FileBeingUninstalledText
 "Rimozione di <%FileBeingUninstalled%>"
 
 FileOverwriteText
-"Il file <%FileBeingInstalled%> esiste gi‡. Lo si vuole sovrascrivere?"
+"Il file <%FileBeingInstalled%> esiste gi√†. Lo si vuole sovrascrivere?"
 
 Finish
 "Fine"
@@ -89,7 +89,7 @@ InstallPrepareText
 "Preparazione dell'installazione..."
 
 InstallStartupText
-"<%AppName%> sar‡ installato sul computer. Proseguire?"
+"<%AppName%> sar√† installato sul computer. Proseguire?"
 
 InstallTitleText
 "Installazione di <%AppName%>"
@@ -107,7 +107,7 @@ OK
 "OK"
 
 PasswordIncorrectText
-"La parola chiave Ë errata."
+"La parola chiave √® errata."
 
 ProgramFilesDescription
 "Programmi Comuni"
@@ -146,7 +146,7 @@ UninstallCompleteText
 "Disinstallazione completata."
 
 UninstallStartupText
-"<%AppName%> sar‡ rimosso completamente dal sistema. Si Ë sicuri di voler\
+"<%AppName%> sar√† rimosso completamente dal sistema. Si √® sicuri di voler\
  procedere?"
 
 UninstallLeftoverText
@@ -166,7 +166,7 @@ ViewReadmeText
 "Visualizza il file Leggimi"
 
 Yes
-"SÏ"
+"S√¨"
 
 ConsolePause {
     Message

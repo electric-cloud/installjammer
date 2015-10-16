@@ -204,7 +204,7 @@ proc ::InstallJammer::CreateActionFrame { id } {
     $prop insert end root standard -text "Standard Properties" -open 1
 
     if {[llength [$obj properties 0]]} {
-        $prop insert end root advanced -text "Advanced Properties" -open 0
+        $prop insert end root advanced -text "Advanced Properties" -open 1
     }
 
     $obj addproperties $prop $id
@@ -241,10 +241,10 @@ proc ::InstallJammer::CreateAddWidgetActionFrame { id } {
 
     set appearance {Background Foreground Height LabelJustify LabelSide
                     LabelWidth Type Width X Y}
-    $prop insert end root appearance -text "Widget Properties" -open 0
+    $prop insert end root appearance -text "Widget Properties" -open 1
     $obj addproperties $prop $id -properties $appearance -parentnode appearance
 
-    $prop insert end root advanced -text "Advanced Properties" -open 0
+    $prop insert end root advanced -text "Advanced Properties" -open 1
     foreach property [$obj properties 0] {
         if {[lsearch -exact $appearance $property] > -1} { continue }
         $obj addproperties $prop $id -properties $property -parentnode advanced

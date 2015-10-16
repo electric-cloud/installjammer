@@ -1754,7 +1754,7 @@ proc CreatePaneFrame { id } {
 
     $prop insert end root standard -text "Standard Properties" -open 1
     if {[llength [$obj properties 0]]} {
-        $prop insert end root advanced -text "Advanced Properties" -open 0
+        $prop insert end root advanced -text "Advanced Properties" -open 1
     }
     $obj addproperties $prop $id
 
@@ -2920,6 +2920,7 @@ proc ::InstallJammer::LoadMessages { args } {
         }
 
         set fp [open $file]
+		fconfigure $fp -translation auto -encoding utf-8
         set line [string trim [gets $fp]]
         if {[string index $line 0] eq "#"} {
             catch { eval [list fconfigure $fp] [string trimleft $line #] }

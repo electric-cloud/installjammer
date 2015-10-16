@@ -33,7 +33,7 @@ CopyFiles {
     "<%AppName%> installeren"
 
     Caption
-    "Een ogenblik geduld terwijl <%AppName%> wordt geïnstalleerd op uw computer."
+    "Een ogenblik geduld terwijl <%AppName%> wordt geÐ¿nstalleerd op uw computer."
 
     Message
     ""
@@ -174,7 +174,7 @@ SelectDestination {
     "Kies de installatie map"
 
     Subtitle
-    "Waar moet <%AppName%> worden geïnstalleerd?"
+    "Waar moet <%AppName%> worden geÐ¿nstalleerd?"
 
     Caption
     "Dit installatie programma zal <%AppName%> in de onderstaande map installeren."
@@ -242,7 +242,7 @@ SetupComplete {
     "Installatie Programma Afgerond"
 
     Message
-    "Het installatie programma heeft <%AppName%> succesvol geïnstalleerd. \
+    "Het installatie programma heeft <%AppName%> succesvol geÐ¿nstalleerd. \
      Klik op <%Finish%> om het installatie programma te sluiten."
 
     NextButton
@@ -283,15 +283,15 @@ SetupType {
 
 StartCopyingFiles {
     Title
-    "Start Kopiëren Bestanden"
+    "Start KopiÐ»ren Bestanden"
 
     Subtitle
     "Bekijk uw instellingen voordat het installeren begint"
 
     Caption
-    "Het installatie programma heeft genoeg informatie om het kopiëren te starten. \
+    "Het installatie programma heeft genoeg informatie om het kopiÐ»ren te starten. \
      Als u de instellingen wilt bekijken of wijzigen kunt op <%Back%> klikken.  Als u\
-     tevreden bent met de instellingen klikt u op <%Next%> om het kopiëren te starten."
+     tevreden bent met de instellingen klikt u op <%Next%> om het kopiÐ»ren te starten."
 
     Message
     ""
@@ -315,10 +315,10 @@ StartCopyingFiles {
 
 Uninstall {
     Title
-    "Deïnstalleren"
+    "DeÐ¿nstalleren"
 
     Subtitle
-    "<%AppName%> deïnstalleren"
+    "<%AppName%> deÐ¿nstalleren"
 
     Caption
     "<%GroupBeingUninstalledText%>"
@@ -344,7 +344,7 @@ Uninstall {
 
 UninstallComplete {
     Caption
-    "Deïnstallatie afgerond"
+    "DeÐ¿nstallatie afgerond"
 
     Message
     "<%AppName%> is van uw systeem verwijderd."
@@ -361,13 +361,13 @@ UninstallComplete {
 
 UninstallDetails {
     Title
-    "Deïnstallatie Details"
+    "DeÐ¿nstallatie Details"
 
     Subtitle
-    "Er hebben zich fouten voorgedaan tijdens de deïnstallatie"
+    "Er hebben zich fouten voorgedaan tijdens de deÐ¿nstallatie"
 
     Caption
-    "De volgende fouten hebben zicht voorgedaan tijdens de deïnstallatie:"
+    "De volgende fouten hebben zicht voorgedaan tijdens de deÐ¿nstallatie:"
 
     Message
     ""

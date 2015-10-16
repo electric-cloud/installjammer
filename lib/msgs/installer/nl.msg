@@ -11,7 +11,7 @@ BuildFileText
 "Bouwen <%Tail <%FileBeingInstalled%>%>..."
 
 BuildUninstallText
-"Bouwen deïnstallatie..."
+"Bouwen deÃ¯nstallatie..."
 
 Cancel
 "Annuleren"
@@ -53,7 +53,7 @@ ExitText
 "Weet u zeker dat u wilt stoppen met deze installatie?"
 
 FileBeingInstalledText
-"Kopiëren <%FileBeingInstalled%>"
+"KopiÃ«ren <%FileBeingInstalled%>"
 
 FileBeingUninstalledText
 "Verwijderen <%FileBeingUninstalled%>"
@@ -134,7 +134,7 @@ UninstallApplicationText
 "Verwijderen <%AppName%>"
 
 UninstallPrepareText
-"Deïnstallatie voorbereiden..."
+"DeÃ¯nstallatie voorbereiden..."
 
 UpdateRegistryText
 "Windows Register bijwerken..."
@@ -143,7 +143,7 @@ UninstallingApplicationText
 "<%AppName%> verwijderen..."
 
 UninstallCompleteText
-"Deïnstallatie klaar."
+"DeÃ¯nstallatie klaar."
 
 UninstallStartupText
 "Dit verwijderd <%AppName%> geheel van uw systeem.  Weet u zeker\

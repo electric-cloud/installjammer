@@ -36,6 +36,8 @@ Property LineFeed choice "Line Feed" "Auto" {Auto Unix Windows}
 Help LineFeed "The end-of-line character to use when outputting lines"
 
 proc ::InstallJammer::actions::ReplaceTextInFile { obj } {
+    global conf
+
     $obj properties props
 
     set translation auto
@@ -49,6 +51,13 @@ proc ::InstallJammer::actions::ReplaceTextInFile { obj } {
 
     foreach file [::InstallJammer::GetFilesForPattern $props(Files) -type f] {
         set contents [read_file $file]
+
+        # Make the file writable.
+        if {$conf(windows)} {
+            file attributes $file -readonly 0
+        } else {
+            file attributes $file -permissions a+w
+        }
 
         set fp [open $file w]
         fconfigure $fp -translation $translation

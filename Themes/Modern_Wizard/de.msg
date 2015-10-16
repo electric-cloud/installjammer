@@ -3,14 +3,14 @@ ChooseComponents {
     "Auswahl Komponenten"
 
     Subtitle
-    "Wählen Sie die zu installierenden Komponenten aus."
+    "WÐ´hlen Sie die zu installierenden Komponenten aus."
 
     Caption
-    "Wählen Sie die zu installierenden Komponenten aus und deselektieren Sie\
-     die Komponenten, die Sie nicht installieren möchten."
+    "WÐ´hlen Sie die zu installierenden Komponenten aus und deselektieren Sie\
+     die Komponenten, die Sie nicht installieren mÑ†chten."
 
     Message
-    "<%SpaceRequiredText%> an Plattenplatz benötigt"
+    "<%SpaceRequiredText%> an Plattenplatz benÑ†tigt"
 
     DescriptionLabel
     "Beschreibung"
@@ -33,7 +33,7 @@ CopyFiles {
     "Installiere <%AppName%>"
 
     Caption
-    "Bitte warten Sie, während Setup <%AppName%> auf Ihrem Computer installiert."
+    "Bitte warten Sie, wÐ´hrend Setup <%AppName%> auf Ihrem Computer installiert."
 
     Message
     ""
@@ -56,7 +56,7 @@ CopyFiles {
 
 CustomBlankPane1 {
     Caption
-    "Überschrift kommt hier hin."
+    "Ð¬berschrift kommt hier hin."
 
     Message
     "Meldung kommt hier hin."
@@ -79,7 +79,7 @@ CustomBlankPane2 {
     "Untertitel"
 
     Caption
-    "Überschrift"
+    "Ð¬berschrift"
 
     Message
     "Meldung"
@@ -148,7 +148,7 @@ Readme {
     "Liesmich Informationen"
 
     Subtitle
-    "Liesmich Informationen für <%AppName%>"
+    "Liesmich Informationen fÑŒr <%AppName%>"
 
     Caption
     ""
@@ -179,15 +179,15 @@ SelectDestination {
     Caption
     "Setup wird <%AppName%> in das folgende Verzeichnis installieren. \
     \n\nKlicken Sie auf Weiter, wenn dieses Verzeichnis verwendet werden soll. \
-    Um ein anderes Verzeichnis auszuwählen, klicken Sie auf Durchsuchen und\
-    wählen ein anderes aus."
+    Um ein anderes Verzeichnis auszuwÐ´hlen, klicken Sie auf Durchsuchen und\
+    wÐ´hlen ein anderes aus."
 
     Message
     ""
 
     BrowseText
     "Um Fortzufahren, klicken Sie auf Weiter.  Wenn Sie ein anderes Verzeichnis\
-    verwenden möchten, klicken Sie auf Durchsuchen."
+    verwenden mÑ†chten, klicken Sie auf Durchsuchen."
 
     NextButton
     "<%Next%> >"
@@ -210,12 +210,12 @@ SelectProgramFolder {
     "Auswahl Programmordner"
 
     Subtitle
-    "Bitte wählen Sie einen Programmordner."
+    "Bitte wÐ´hlen Sie einen Programmordner."
 
     Caption
-    "Setup wird die Programmsymbole zum unten aufgeführten Programmordner\
-    hinzufügen. Sie können einen neuen Ordnernamen eingeben oder einen von der\
-    von der existierenden Ordnerliste auswählen. Klicken Sie auf Weiter um\
+    "Setup wird die Programmsymbole zum unten aufgefÑŒhrten Programmordner\
+    hinzufÑŒgen. Sie kÑ†nnen einen neuen Ordnernamen eingeben oder einen von der\
+    von der existierenden Ordnerliste auswÐ´hlen. Klicken Sie auf Weiter um\
     Fortzufahren."
 
     Message
@@ -237,7 +237,7 @@ SelectProgramFolder {
     "<%Cancel%>"
 
     AllUsersCheckbutton
-    "Erstelle Programmordner für alle Benutzer"
+    "Erstelle Programmordner fÑŒr alle Benutzer"
 }
 
 SetupComplete {
@@ -263,7 +263,7 @@ SetupType {
     "Setup Art"
 
     Subtitle
-    "Wählen Sie die Art des Setup, welche am Besten Ihren Anforderungen\
+    "WÐ´hlen Sie die Art des Setup, welche am Besten Ihren Anforderungen\
     entspricht."
 
     Caption
@@ -290,12 +290,12 @@ StartCopyingFiles {
     "Kopieren der Dateien"
 
     Subtitle
-    "Überprüfen Sie die Einstellungen, bevor die Dateien kopiert werden."
+    "Ð¬berprÑŒfen Sie die Einstellungen, bevor die Dateien kopiert werden."
 
     Caption
     "Setup hat genug Informationen, um die Programmdateien\
-    zu kopieren. Wenn Sie die Einstellungen überprüfen oder ändern möchten,\
-    klicken Sie auf Zurück. Wenn Sie mit den Einstellungen zufrieden sind,\
+    zu kopieren. Wenn Sie die Einstellungen ÑŒberprÑŒfen oder Ð´ndern mÑ†chten,\
+    klicken Sie auf ZurÑŒck. Wenn Sie mit den Einstellungen zufrieden sind,\
     klicken Sie auf Weiter, um mit dem Kopieren der Dateien zu beginnen."
 
     Message
@@ -369,10 +369,10 @@ UninstallDetails {
     "Deinstallation Details"
 
     Subtitle
-    "Es sind Fehler beim Löschen aufgetreten"
+    "Es sind Fehler beim LÑ†schen aufgetreten"
 
     Caption
-    "Die folgenden Fehler sind beim Löschen aufgetreten:"
+    "Die folgenden Fehler sind beim LÑ†schen aufgetreten:"
 
     Message
     ""
@@ -399,7 +399,7 @@ UserInformation {
     "Bitte geben Sie Ihre Informationen ein."
 
     Caption
-    "Bitte geben Sie Ihren Namen und den Namen der Firma ein, für die Sie\
+    "Bitte geben Sie Ihren Namen und den Namen der Firma ein, fÑŒr die Sie\
     arbeiten."
 
     Message
@@ -424,11 +424,11 @@ UserInformation {
 
 Welcome {
     Caption
-    "Willkommen beim InstallJammer Assistenten für <%AppName%>"
+    "Willkommen beim InstallJammer Assistenten fÑŒr <%AppName%>"
 
     Message
     "Dies wird <%AppName%> Version <%Version%> auf Ihrem Computer installieren. \
-    \n\nEs wird empfohlen, das Sie alle anderen Anwendungen schließen, bevor\
+    \n\nEs wird empfohlen, das Sie alle anderen Anwendungen schlieÐ¯en, bevor\
     Sie fortfahren.\n\nKlicken Sie auf Weiter um Fortzufahren oder auf\
     Abbrechen, um das Setup zu beenden."
 

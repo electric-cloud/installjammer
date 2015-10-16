@@ -37,8 +37,14 @@ proc ::InstallJammer::actions::LaunchWebBrowser { obj } {
     debug "Launching web browser with URL $url"
 
     if {$conf(windows)} {
-        installkit::Windows::shellExecute open $url
+        set status [catch {installkit::Windows::shellExecute open $url} result]
     } else {
-        exec xdg-open $url &
+        set status [catch {exec xdg-open $url &} result]
+    }
+    debug "Status: $status"
+    debug "Result: $result"
+    if {$status != 0} {
+        ::InstallJammer::Message -icon warning -type ok -title "Warning" \
+            -message "Unable to launch a web browser. See the log for details."
     }
 }

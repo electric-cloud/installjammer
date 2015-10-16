@@ -3,17 +3,17 @@ ChooseComponents {
     "Selecionar Componentes"
 
     Subtitle
-    "Selecione os componentes que seão instalados."
+    "Selecione os componentes que seÃ£o instalados."
 
     Caption
-    "Selecione os componentes que você quer instalar e deselecione os componentes\
-     que você não quer instalar."
+    "Selecione os componentes que vocÃª quer instalar e deselecione os componentes\
+     que vocÃª nÃ£o quer instalar."
 
     Message
-    "<%SpaceRequiredText%> de espaço é necessário"
+    "<%SpaceRequiredText%> de espaÃ§o Ã© necessÃ¡rio"
 
     DescriptionLabel
-    "Descrição"
+    "DescriÃ§Ã£o"
 
     NextButton
     "<%Next%> >"
@@ -33,7 +33,7 @@ CopyFiles {
     "Instalando <%AppName%>"
 
     Caption
-    "Por favor, aguarde enquanto o programa <%AppName%> é instalado em seu computador."
+    "Por favor, aguarde enquanto o programa <%AppName%> Ã© instalado em seu computador."
 
     Message
     ""
@@ -56,10 +56,10 @@ CopyFiles {
 
 CustomBlankPane1 {
     Caption
-    "Caption irá aqui."
+    "Caption irÃ¡ aqui."
 
     Message
-    "Mensagem irá aqui."
+    "Mensagem irÃ¡ aqui."
 
     NextButton
     "<%Next%> >"
@@ -73,10 +73,10 @@ CustomBlankPane1 {
 
 CustomBlankPane2 {
     Title
-    "Título"
+    "TÃ­tulo"
 
     Subtitle
-    "Subtítulo"
+    "SubtÃ­tulo"
 
     Caption
     "Caption"
@@ -96,10 +96,10 @@ CustomBlankPane2 {
 
 CustomTextPane1 {
     Title
-    "Título"
+    "TÃ­tulo"
 
     Subtitle
-    "Subtítulo"
+    "SubtÃ­tulo"
 
     Caption
     "Caption"
@@ -122,16 +122,16 @@ CustomTextPane1 {
 
 License {
     Title
-    "Concordância com a Licença"
+    "ConcordÃ¢ncia com a LicenÃ§a"
 
     Subtitle
-    "Por favor, leia os termos da licença cuidadosamente."
+    "Por favor, leia os termos da licenÃ§a cuidadosamente."
 
     AcceptRadiobutton
-    "Eu concordo os termos da licença."
+    "Eu concordo os termos da licenÃ§a."
 
     DeclineRadiobutton
-    "Eu não concordo com os termos da licença."
+    "Eu nÃ£o concordo com os termos da licenÃ§a."
 
     NextButton
     "<%Next%> >"
@@ -145,10 +145,10 @@ License {
 
 Readme {
     Title
-    "Informações do Readme"
+    "InformaÃ§Ãµes do Readme"
 
     Subtitle
-    "Informações do Readme para <%AppName%>"
+    "InformaÃ§Ãµes do Readme para <%AppName%>"
 
     Caption
     ""
@@ -171,21 +171,21 @@ Readme {
 
 SelectDestination {
     Title
-    "Escolha a localização de destino"
+    "Escolha a localizaÃ§Ã£o de destino"
 
     Subtitle
-    "Onde o <%AppName%> deverá ser instalado?"
+    "Onde o <%AppName%> deverÃ¡ ser instalado?"
 
     Caption
-    "A Instalação irá instalar <%AppName%> na seguinte pasta.\n\nPara instalar\
-     nesta pasta, clique em Próximo.  Para instalar em uma pasta diferente, clique\
+    "A InstalaÃ§Ã£o irÃ¡ instalar <%AppName%> na seguinte pasta.\n\nPara instalar\
+     nesta pasta, clique em PrÃ³ximo.  Para instalar em uma pasta diferente, clique\
      em Procurar e selecione outra pasta."
 
     Message
     ""
 
     BrowseText
-    "Para continuar, clique em Próximo.  Se você deseja selecionar uma pasta diferente,\
+    "Para continuar, clique em PrÃ³ximo.  Se vocÃª deseja selecionar uma pasta diferente,\
      clique em Procurar."
 
     NextButton
@@ -212,9 +212,9 @@ SelectProgramFolder {
     "Por favor, selecione uma pasta de programa."
 
     Caption
-    "A Instalação adicionará os ícones do programa Pasta de Programas listada abaixo. \
-     Você poderá digitar um novo nome de pasta or selecionar uma das pastas da lista. \
-     Clique em Próximo para continuar."
+    "A InstalaÃ§Ã£o adicionarÃ¡ os Ã­cones do programa Pasta de Programas listada abaixo. \
+     VocÃª poderÃ¡ digitar um novo nome de pasta or selecionar uma das pastas da lista. \
+     Clique em PrÃ³ximo para continuar."
 
     Message
     ""
@@ -235,12 +235,12 @@ SelectProgramFolder {
     "<%Cancel%>"
 
     AllUsersCheckbutton
-    "Criar uma pasta de programa para todos os usuários"
+    "Criar uma pasta de programa para todos os usuÃ¡rios"
 }
 
 SetupComplete {
     Caption
-    "Assistente InstallJammer Concluído"
+    "Assistente InstallJammer ConcluÃ­do"
 
     Message
     "O Assistente InstallJammer instalou com sucesso o <%AppName%>. \
@@ -258,19 +258,19 @@ SetupComplete {
 
 SetupType {
     Title
-    "Tipo de Instalação"
+    "Tipo de InstalaÃ§Ã£o"
 
     Subtitle
-    "Seleciona o tipo de instalação que melhor de adapta às suas necessidades."
+    "Seleciona o tipo de instalaÃ§Ã£o que melhor de adapta Ã s suas necessidades."
 
     Caption
-    "Clique no tipo de Instalação de sua preferência."
+    "Clique no tipo de InstalaÃ§Ã£o de sua preferÃªncia."
 
     Message
     ""
 
     DescriptionLabel
-    "Descrição"
+    "DescriÃ§Ã£o"
 
     NextButton
     "<%Next%> >"
@@ -284,21 +284,21 @@ SetupType {
 
 StartCopyingFiles {
     Title
-    "Iniciar Cópia de Arquivos"
+    "Iniciar CÃ³pia de Arquivos"
 
     Subtitle
-    "Reveja as configurações antes de copiar os arquivos"
+    "Reveja as configuraÃ§Ãµes antes de copiar os arquivos"
 
     Caption
-    "A Instalação tem bastante informação para iniciar a cópia dos arquivos do programa.  Se\
-     você deseja revisar or mudar qualquer configuração, clique em Voltar.  Se você está\
-     satisfeito com as configurações, clique em Próximo para iniciar a cópia dos arquivos."
+    "A InstalaÃ§Ã£o tem bastante informaÃ§Ã£o para iniciar a cÃ³pia dos arquivos do programa.  Se\
+     vocÃª deseja revisar or mudar qualquer configuraÃ§Ã£o, clique em Voltar.  Se vocÃª estÃ¡\
+     satisfeito com as configuraÃ§Ãµes, clique em PrÃ³ximo para iniciar a cÃ³pia dos arquivos."
 
     Message
     ""
 
     Text
-    "Diretório de Instalação:\n\t<%InstallDir%>\n\nTipo de Instalação:\n\t<%InstallType%>"
+    "DiretÃ³rio de InstalaÃ§Ã£o:\n\t<%InstallDir%>\n\nTipo de InstalaÃ§Ã£o:\n\t<%InstallType%>"
 
     NextButton
     "<%Next%> >"
@@ -341,7 +341,7 @@ Uninstall {
 
 UninstallComplete {
     Caption
-    "Desinstalação Concluída"
+    "DesinstalaÃ§Ã£o ConcluÃ­da"
 
     Message
     "<%AppName%> foi removido do seu sistema."
@@ -358,13 +358,13 @@ UninstallComplete {
 
 UninstallDetails {
     Title
-    "Detalhes de Desinstalação"
+    "Detalhes de DesinstalaÃ§Ã£o"
 
     Subtitle
-    "Erros ocurreram durante a desinstalação"
+    "Erros ocurreram durante a desinstalaÃ§Ã£o"
 
     Caption
-    "Os seguintes error ocorreram durante a desinstalação:"
+    "Os seguintes error ocorreram durante a desinstalaÃ§Ã£o:"
 
     Message
     ""
@@ -385,19 +385,19 @@ UninstallDetails {
 
 UserInformation {
     Title
-    "Informações do Proprietário"
+    "InformaÃ§Ãµes do ProprietÃ¡rio"
 
     Subtitle
-    "Por favor, digite as tuas informações."
+    "Por favor, digite as tuas informaÃ§Ãµes."
 
     Caption
-    "Por favor, digite seu nome e o nome da empresa onde você trabalha."
+    "Por favor, digite seu nome e o nome da empresa onde vocÃª trabalha."
 
     Message
     ""
 
     UserNameLabel
-    "Nome do Usuário:"
+    "Nome do UsuÃ¡rio:"
 
     CompanyLabel
     "Empresa:"
@@ -418,9 +418,9 @@ Welcome {
     "Bem vindo ao Assistente InstallJammer para o <%AppName%>"
 
     Message
-    "Será instalado <%AppName%> version <%Version%> em seu computador. \
-    \n\nÉ recomendado que você feche todos os outros programas antes de continuar. \n\n
-    Clique em Próximo para continuar ou em Cancelar para sair da Instalação."
+    "SerÃ¡ instalado <%AppName%> version <%Version%> em seu computador. \
+    \n\nÃ‰ recomendado que vocÃª feche todos os outros programas antes de continuar. \n\n
+    Clique em PrÃ³ximo para continuar ou em Cancelar para sair da InstalaÃ§Ã£o."
 
     NextButton
     "<%Next%> >"

@@ -835,15 +835,15 @@ proc Done {} {
     $id set Alias "Setup Actions"
 
     set id [::InstallJammer::AddActionGroup Install \
-        -parent ActionGroupsInstall -title "Startup Actions" -edit 0 -open 0]
+        -parent ActionGroupsInstall -title "Startup Actions" -edit 0 -open 1]
     $id set Alias "Startup Actions"
 
     set id [::InstallJammer::AddActionGroup Install \
-        -parent ActionGroupsInstall -title "Install Actions" -edit 0 -open 0]
+        -parent ActionGroupsInstall -title "Install Actions" -edit 0 -open 1]
     $id set Alias "Install Actions"
 
     set id [::InstallJammer::AddActionGroup Install \
-        -parent ActionGroupsInstall -title "Finish Actions" -edit 0 -open 0]
+        -parent ActionGroupsInstall -title "Finish Actions" -edit 0 -open 1]
     $id set Alias "Finish Actions"
     set installFinishActions $id
 
@@ -891,12 +891,12 @@ proc Done {} {
     $id set Alias "Setup Actions"
 
     set id [::InstallJammer::AddActionGroup Uninstall \
-        -parent ActionGroupsUninstall -title "Startup Actions" -edit 0 -open 0]
+        -parent ActionGroupsUninstall -title "Startup Actions" -edit 0 -open 1]
     $id set Alias "Startup Actions"
 
     set id [::InstallJammer::AddActionGroup Uninstall \
         -parent ActionGroupsUninstall -title "Uninstall Actions" \
-	-edit 0 -open 0]
+	-edit 0 -open 1]
     $id set Alias "Uninstall Actions"
 
     set id [::InstallJammer::AddActionGroup Uninstall \

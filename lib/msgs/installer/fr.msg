@@ -2,16 +2,16 @@ ApplicationReadmeText
 "<%AppName%> Readme"
 
 Back
-"Précédent"
+"PrÃ©cÃ©dent"
 
 Browse
 "Parcourir..."
 
 BuildFileText
-"Génération <%Tail <%FileBeingInstalled%>%>..."
+"GÃ©nÃ©ration <%Tail <%FileBeingInstalled%>%>..."
 
 BuildUninstallText
-"Génération de la désinstallation..."
+"GÃ©nÃ©ration de la dÃ©sinstallation..."
 
 Cancel
 "Annuler"
@@ -23,16 +23,16 @@ Close
 "Fermer"
 
 CreateDesktopShortcutText
-"Créer le raccourci sur le bureau"
+"CrÃ©er le raccourci sur le bureau"
 
 CreateQuickLaunchShortcutText
-"Créer un raccourci de lancement rapide"
+"CrÃ©er un raccourci de lancement rapide"
 
 CustomInstallDescription
-"Sélectionner les composants pour l'installation."
+"SÃ©lectionner les composants pour l'installation."
 
 DirectoryPermissionText
-"Vous n'avez pas la permission d'écrire dans le dossier <%Dir%>."
+"Vous n'avez pas la permission d'Ã©crire dans le dossier <%Dir%>."
 
 ExitText
 "Etes-vous certain de vouloir quitter ce programme d'installation?"
@@ -59,10 +59,10 @@ InstallApplicationText
 "Installer <%AppName%>"
 
 InstallCompleteText
-"Installation des fichiers terminée..."
+"Installation des fichiers terminÃ©e..."
 
 InstallPrepareText
-"Préparation de l'installation..."
+"PrÃ©paration de l'installation..."
 
 InstallStartupText
 "Ceci installera <%AppName%>  sur votre ordinateur.  Continuer?"
@@ -83,7 +83,7 @@ ProgramFilesDescription
 "Fichiers programme communs"
 
 RequireRootText
-"Vous devez être ROOT pour exécuter cette installeur."
+"Vous devez Ãªtre ROOT pour exÃ©cuter cette installeur."
 
 SeparatorText
 "InstallJammer"
@@ -92,21 +92,21 @@ TypicalInstallDescription
 "Une installation typique."
 
 UninstallApplicationText
-"Désinstaller <%AppName%>"
+"DÃ©sinstaller <%AppName%>"
 
 UninstallPrepareText
-"Préparation de la désinstallation..."
+"PrÃ©paration de la dÃ©sinstallation..."
 
 UpdateRegistryText
-"Mise à jour de la base de registre Windows..."
+"Mise Ã  jour de la base de registre Windows..."
 
 UninstallStartupText
-"Ceci supprimera complètement <%AppName%> de votre ordinateur.  Etes-vous\
+"Ceci supprimera complÃ¨tement <%AppName%> de votre ordinateur.  Etes-vous\
  certain de vouloir faire cela?"
 
 UninstallLeftoverText
-"Certain composants n'ont pu être supprimés. Souhairez vous quand même les\
- effacer (non recommandé)?"
+"Certain composants n'ont pu Ãªtre supprimÃ©s. Souhairez vous quand mÃªme les\
+ effacer (non recommandÃ©)?"
 
 ViewReadmeText
 "Lire le fichier Readme"
@@ -120,7 +120,7 @@ Yes
 
 LocateJavaRuntime {
     PromptMessage
-    "Merci de préciser la localisation de votre Runtime Java"
+    "Merci de prÃ©ciser la localisation de votre Runtime Java"
 
     StatusMessage
     "Localisation du Runtime Java..."
@@ -128,10 +128,10 @@ LocateJavaRuntime {
 
 TextWindow {
     Title
-    "Titre de la fenêtre"
+    "Titre de la fenÃªtre"
 
     Caption
-    "Légende"
+    "LÃ©gende"
 
     Message
     "Saisir le message ici."

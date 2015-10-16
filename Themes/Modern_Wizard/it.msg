@@ -178,7 +178,7 @@ SelectDestination {
     "Dove si desidera installare <%AppName%>?"
 
     Caption
-    "Il programma di installazione installer‡†<%AppName%> nella seguente\
+    "Il programma di installazione installer–∞¬†<%AppName%> nella seguente\
      cartella.\n\nPer installare in questa cartella, premere su Avanti. \
      Per installare in una cartella diversa, premere su Sfoglia e\
      selezionare un'altra cartella."
@@ -214,9 +214,9 @@ SelectProgramFolder {
     "Si prega di selezionare la cartella del programma."
 
     Caption
-    "Il programma di installazione aggiunger‡ le icone del programma nella\
+    "Il programma di installazione aggiunger–∞ le icone del programma nella\
      cartella elencata sotto. \
-     Si puÚ inserire il nome di una nuova cartella o selezionarla dalla\
+     Si pu—Ç inserire il nome di una nuova cartella o selezionarla dalla\
      lista delle cartelle esistenti. \
      Premere su Avanti per proseguire."
 
@@ -265,7 +265,7 @@ SetupType {
     "Tipologia di installazione"
 
     Subtitle
-    "Selezionare la tipologia di installazione pi˘ adatta alle proprie esigenze."
+    "Selezionare la tipologia di installazione pi—â adatta alle proprie esigenze."
 
     Caption
     "Scegliere la tipologia di installazione che si preferisce."
@@ -296,7 +296,7 @@ StartCopyingFiles {
     Caption
     "Il programma di installazione ha sufficienti informazioni per iniziare\
      la copia dei file del programma. Se si desidera controllare o\
-     modificare le impostazioni, premere Indietro. Se si Ë soddisfatti\
+     modificare le impostazioni, premere Indietro. Se si –∏ soddisfatti\
      delle impostazioni, premere Avanti per iniziare a copiare i file."
 
     Message
@@ -353,7 +353,7 @@ UninstallComplete {
     "Disinstallazione completata"
 
     Message
-    "<%AppName%> Ë stato rimosso dal sistema."
+    "<%AppName%> –∏ stato rimosso dal sistema."
 
     NextButton
     "<%Finish%>"
@@ -400,7 +400,7 @@ UserInformation {
     "Si prega di inserire le informazioni."
 
     Caption
-    "Si prega di inserire il proprio nome e il nome della societ‡ per cui\
+    "Si prega di inserire il proprio nome e il nome della societ–∞ per cui\
      si lavora."
 
     Message
@@ -410,7 +410,7 @@ UserInformation {
     "Nome dell'utente:"
 
     CompanyLabel
-    "Societ‡:"
+    "Societ–∞:"
 
     NextButton
     "<%Next%> >"
